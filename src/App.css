@@ -1,38 +1,187 @@
-.App {
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.home-container {
   text-align: center;
+  margin-top: 120px;
+  padding: 0 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Logo Responsive */
+.logo {
+  font-size: clamp(26px, 5vw, 50px);
+  font-weight: 700;
+  color: #facc15;
+  margin-bottom: 60px;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Search Box */
+.search-box {
+  position: relative;
+  width: min(520px, 95%);
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-box input {
+  width: 100%;
+  padding: 15px 20px 15px 48px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.search-box input:focus {
+  border: 1px solid #facc15;
+  box-shadow: 0 4px 18px rgba(250, 204, 21, 0.35);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+/* Suggestions */
+.suggestions {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border-radius: 14px;
+  margin-top: 8px;
+  overflow-y: auto;
+  max-height: 220px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.suggestion-item {
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 15px;
+}
+
+.suggestion-item:hover,
+.suggestion-item.active {
+  background: #f1f5f9;
+}
+
+/* Buttons */
+.back-btn {
+  margin: 30px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #facc15;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.song-meta span:last-child {
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* Top Bar */
+.top-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  gap: 30px;
+}
+
+/* Toggle Button */
+.theme-toggle {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #facc15;
+}
+
+/* Dark Mode */
+.dark {
+  background: #0f172a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dark .home-container {
+  background: #0f172a;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.dark .logo {
+  color: #facc15;
+}
+
+.dark .search-box input {
+  background: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.dark .suggestions {
+  background: #1e293b;
+  border: 1px solid #334155;
+}
+
+.dark .suggestion-item:hover,
+.dark .suggestion-item.active {
+  background: #334155;
+}
+
+.dark .song-card {
+  background: #1e293b;
+  color: white;
+}
+
+.dark .back-btn,
+.dark .transpose-controls button {
+  background: #facc15;
+}
+
+.dark .chord {
+  color: #facc15;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .home-container {
+    margin-top: 80px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .top-bar {
+    flex-direction: column;
+    gap: 10px;
   }
+
+  .logo {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  .search-box input {
+    font-size: 15px;
+  }
+
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+  .logo {
+    font-size: clamp(24px, 5vw, 38px);
+  }
+
 }
