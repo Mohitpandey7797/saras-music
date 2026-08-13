@@ -1,6 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+import SongCard from "./components/SongCard";
+
+import SearchBar from "./components/SearchBar";
 import SongViewer from "./components/SongViewer";
+
 import songs from "./data/songs.json";
 
 function App() {
@@ -9,106 +13,128 @@ function App() {
     return savedSong ? JSON.parse(savedSong) : null;
   });
 
-  const [search, setSearch] = useState("");
-  const [filteredSongs, setFilteredSongs] = useState([]);
-  const [highlightIndex, setHighlightIndex] = useState(-1);
-
   const [darkMode, setDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem("theme");
-    return savedTheme === "dark";
+    return localStorage.getItem("theme") === "dark";
   });
 
-  const suggestionsRef = useRef([]);
+  const [showAllSongs, setShowAllSongs] = useState(false);
 
-  // Dark Mode
+  const [sortOption, setSortOption] = useState("title-az");
+  const [songFilter, setSongFilter] = useState("");
+
   useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.body.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
+    document.body.classList.toggle("dark", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
-  // Search Filter
   useEffect(() => {
-    if (search.trim() === "") {
-      setFilteredSongs([]);
-      return;
-    }
+  if (selectedSong) {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  }
+}, [selectedSong]);
 
-    const results = songs.filter(
-      (song) =>
-        song.title.toLowerCase().includes(search.toLowerCase()) ||
-        song.artist.toLowerCase().includes(search.toLowerCase())
-    );
-
-    const uniqueSongs = Array.from(
-      new Map(results.map((song) => [song.title, song])).values()
-    );
-
-    setFilteredSongs(uniqueSongs);
-  }, [search]);
-
-  // Scroll active suggestion into view
-  useEffect(() => {
-    if (highlightIndex >= 0) {
-      suggestionsRef.current[highlightIndex]?.scrollIntoView({
-        block: "nearest",
-      });
-    }
-  }, [highlightIndex]);
 
   const openSong = (song) => {
-    setSelectedSong(song);
-    sessionStorage.setItem("selectedSong", JSON.stringify(song));
+  setSelectedSong(song);
 
-    setSearch("");
-    setFilteredSongs([]);
-    setHighlightIndex(-1);
+  sessionStorage.setItem(
+    "selectedSong",
+    JSON.stringify(song)
+  );
+
+  window.scrollTo({
+    top: 0,
+    behavior: "instant",
+  });
+};
+
+  const closeSong = () => {
+    setSelectedSong(null);
+    sessionStorage.removeItem("selectedSong");
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === "ArrowDown") {
-      setHighlightIndex((prev) =>
-        prev < filteredSongs.length - 1 ? prev + 1 : prev
-      );
+  const filteredAndSortedSongs = [...songs]
+  .filter((song) => {
+    const query = songFilter.trim().toLowerCase();
+
+    if (!query) return true;
+
+    return (
+      song.title?.toLowerCase().includes(query) ||
+      song.artist?.toLowerCase().includes(query) ||
+      song.movie?.toLowerCase().includes(query)
+    );
+  })
+  .sort((a, b) => {
+    if (sortOption === "title-az") {
+      return a.title.localeCompare(b.title);
     }
 
-    if (e.key === "ArrowUp") {
-      setHighlightIndex((prev) => (prev > 0 ? prev - 1 : 0));
+    if (sortOption === "title-za") {
+      return b.title.localeCompare(a.title);
     }
 
-    if (e.key === "Enter" && highlightIndex >= 0) {
-      openSong(filteredSongs[highlightIndex]);
+    if (sortOption === "artist-az") {
+      return (a.artist || "").localeCompare(b.artist || "");
     }
-  };
 
-  // Song View
+    return 0;
+  });
+
+const visibleSongs = showAllSongs
+  ? filteredAndSortedSongs
+  : filteredAndSortedSongs.slice(0, 8);
+
+
+  /* =========================
+     SONG PAGE
+  ========================= */
+
   if (selectedSong) {
     return (
-      <div className="app-wrapper">
-        <button
-          className="back-btn"
-          onClick={() => {
-            setSelectedSong(null);
-            sessionStorage.removeItem("selectedSong");
-          }}
-        >
-          ← Back
-        </button>
+      <div className="song-page">
+
+        <div className="song-top-bar">
+
+          <button
+            className="back-btn"
+            onClick={closeSong}
+          >
+            ← Back
+          </button>
+
+          <button
+            className="theme-toggle"
+            onClick={() => setDarkMode(!darkMode)}
+          >
+            {darkMode ? "☀ Light" : "🌙 Dark"}
+          </button>
+
+        </div>
 
         <SongViewer song={selectedSong} />
+
       </div>
     );
   }
 
-  // Home Page
+  /* =========================
+     HOME PAGE
+  ========================= */
+
   return (
-    <div className="home-container">
+    <main className="home-container">
+
       <div className="top-bar">
-        <h1 className="logo">🎸 Saras Music</h1>
+
+        <div className="brand-area">
+          <div className="logo">
+            🎸 Saras Music
+          </div>
+        </div>
 
         <button
           className="theme-toggle"
@@ -116,36 +142,270 @@ function App() {
         >
           {darkMode ? "☀ Light" : "🌙 Dark"}
         </button>
+
       </div>
 
-      <div className="search-box">
-        <input
-          type="text"
-          placeholder="Search song..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          onKeyDown={handleKeyDown}
+      <p className="home-subtitle">
+        Guitar Chords & Lyrics
+      </p>
+
+      <div className="search-section">
+
+        <SearchBar
+          songs={songs}
+          setSelectedSong={openSong}
         />
 
-        {filteredSongs.length > 0 && (
-          <div className="suggestions">
-            {filteredSongs.map((song, index) => (
-              <div
-                key={song.id}
-                ref={(el) => (suggestionsRef.current[index] = el)}
-                className={`suggestion-item ${
-                  index === highlightIndex ? "active" : ""
-                }`}
-                onClick={() => openSong(song)}
-              >
-                {song.title} • {song.artist}
-              </div>
-            ))}
-          </div>
-        )}
+        <p className="search-helper">
+          Search by song, artist or movie
+        </p>
+
       </div>
+
+      <section className="popular-section">
+
+  <div className="section-heading">
+    <div>
+      <h2>Popular Songs</h2>
+      <p>Play your favorite songs with guitar chords</p>
     </div>
+
+    <span className="song-count">
+      {songs.length} Songs
+    </span>
+  </div>
+
+  <div className="song-grid">
+    {songs.slice(0, 6).map((song) => (
+      <SongCard
+        key={song.id}
+        song={song}
+        onClick={openSong}
+      />
+    ))}
+  </div>
+
+</section>
+
+
+<section className="recent-section">
+
+  <div className="section-heading">
+    <div>
+      <h2>Recently Added</h2>
+      <p>Latest songs added to Saras Music</p>
+    </div>
+  </div>
+
+  <div className="recent-list">
+    {songs
+      .slice(-6)
+      .reverse()
+      .map((song) => (
+        <SongCard
+          key={`recent-${song.id}`}
+          song={song}
+          onClick={openSong}
+        />
+      ))}
+  </div>
+
+</section>
+
+
+
+<section className="all-songs-section">
+
+  <div className="section-heading">
+
+    <div>
+      <h2>All Songs</h2>
+
+      <p>
+        Browse the complete Saras Music collection
+      </p>
+    </div>
+
+    <span className="song-count">
+      {filteredAndSortedSongs.length} Songs
+    </span>
+
+  </div>
+
+
+  {/* =========================
+      FILTER & SORT TOOLBAR
+  ========================= */}
+
+  <div className="songs-toolbar">
+
+    <div className="song-filter-box">
+
+      <span>
+        🔎
+      </span>
+
+      <input
+        type="text"
+        placeholder="Filter songs..."
+        value={songFilter}
+        onChange={(e) => {
+          setSongFilter(e.target.value);
+          setShowAllSongs(true);
+        }}
+      />
+
+      {songFilter && (
+        <button
+          type="button"
+          onClick={() => setSongFilter("")}
+          aria-label="Clear filter"
+        >
+          ×
+        </button>
+      )}
+
+    </div>
+
+
+    <select
+      className="song-sort-select"
+      value={sortOption}
+      onChange={(e) => {
+        setSortOption(e.target.value);
+        setShowAllSongs(false);
+      }}
+    >
+
+      <option value="title-az">
+        Title A–Z
+      </option>
+
+      <option value="title-za">
+        Title Z–A
+      </option>
+
+      <option value="artist-az">
+        Artist A–Z
+      </option>
+
+    </select>
+
+  </div>
+
+
+  {/* =========================
+      SONG GRID
+  ========================= */}
+
+  {visibleSongs.length > 0 ? (
+
+    <div className="song-grid">
+
+      {visibleSongs.map((song) => (
+
+        <SongCard
+          key={`all-${song.id}`}
+          song={song}
+          onClick={openSong}
+        />
+
+      ))}
+
+    </div>
+
+  ) : (
+
+    <div className="no-library-results">
+
+      <div>
+        🎸
+      </div>
+
+      <strong>
+        No songs found
+      </strong>
+
+      <span>
+        Try another song, artist or movie.
+      </span>
+
+    </div>
+
+  )}
+
+
+  {/* =========================
+      VIEW ALL
+  ========================= */}
+
+  {filteredAndSortedSongs.length > 8 && (
+
+    <button
+      className="view-all-btn"
+      onClick={() =>
+        setShowAllSongs(!showAllSongs)
+      }
+    >
+
+      {showAllSongs
+        ? "Show Less ↑"
+        : `View All ${filteredAndSortedSongs.length} Songs →`}
+
+    </button>
+
+  )}
+
+</section>
+
+      <div className="home-stats">
+
+        <div className="stat-item">
+          <strong>{songs.length}</strong>
+          <span>Songs</span>
+        </div>
+
+        <div className="stat-divider" />
+
+        <div className="stat-item">
+          <strong>🎸</strong>
+          <span>Guitar Chords</span>
+        </div>
+
+        <div className="stat-divider" />
+
+        <div className="stat-item">
+          <strong>🎵</strong>
+          <span>Lyrics</span>
+        </div>
+
+      </div>
+
+      <footer className="home-footer">
+        <span>
+          © {new Date().getFullYear()} Saras Music
+        </span>
+
+        <span>
+          Learn • Play • Sing
+        </span>
+      </footer>
+
+    </main>
   );
 }
 
 export default App;
+
+const ids = songs.map((song) => song.id);
+
+console.log("Total songs:", songs.length);
+console.log("Highest ID:", Math.max(...ids));
+
+console.log(
+  "Missing IDs:",
+  Array.from(
+    { length: Math.max(...ids) },
+    (_, i) => i + 1
+  ).filter((id) => !ids.includes(id))
+);

@@ -1,0 +1,191 @@
+.song-card-item {
+  width: 100%;
+  min-height: 82px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 14px 16px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.song-card-item:hover {
+  transform: translateY(-2px);
+
+  border-color: #facc15;
+
+  box-shadow:
+    0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+
+/* Icon */
+
+.song-card-icon {
+  width: 44px;
+  height: 44px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #fffbeb;
+
+  font-size: 19px;
+}
+
+
+/* Information */
+
+.song-card-info {
+  min-width: 0;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.song-card-info h3 {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #1e293b;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-card-info p {
+  margin: 0;
+
+  overflow: hidden;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.song-card-info span {
+  overflow: hidden;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* Arrow */
+
+.song-card-arrow {
+  flex-shrink: 0;
+
+  color: #cbd5e1;
+
+  font-size: 18px;
+
+  transition: 0.2s ease;
+}
+
+.song-card-item:hover .song-card-arrow {
+  color: #d97706;
+
+  transform: translateX(3px);
+}
+
+
+/* Dark Mode */
+
+.dark .song-card-item {
+  background: #1e293b;
+
+  border-color: #334155;
+}
+
+.dark .song-card-item:hover {
+  border-color: #b89016;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.22);
+}
+
+.dark .song-card-icon {
+  background: rgba(250, 204, 21, 0.08);
+}
+
+.dark .song-card-info h3 {
+  color: #e5e7eb;
+}
+
+.dark .song-card-info p {
+  color: #94a3b8;
+}
+
+.dark .song-card-info span {
+  color: #64748b;
+}
+
+.dark .song-card-arrow {
+  color: #64748b;
+}
+
+.dark .song-card-item:hover .song-card-arrow {
+  color: #facc15;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .song-card-item {
+    min-height: 76px;
+
+    padding: 12px;
+  }
+
+  .song-card-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 17px;
+  }
+
+  .song-card-info h3 {
+    font-size: 13px;
+  }
+
+}

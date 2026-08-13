@@ -2160,7 +2160,7 @@
 },
 
 {
-  "id": 40,
+  "id": 39,
   "title": "Jaan 'Nisaar (Miraya Version)",
   "artist": "Arijit Singh",
   "movie": "Kedarnath",
@@ -2196,7 +2196,7 @@
   ]
 },
 {
-  "id": 41,
+  "id": 40,
   "title": "Kesariya",
   "artist": "Arijit Singh",
   "movie": "Brahmastra",
@@ -2227,7 +2227,7 @@
   ]
 },
 {
-  "id": 42,
+  "id": 41,
   "title": "Phir Kabhi (Miraya Version)",
   "artist": "Arijit Singh",
   "movie": "M.S. Dhoni: The Untold Story",
@@ -2267,7 +2267,7 @@
 },
 
 {
-  "id": 48,
+  "id": 42,
   "title": "Dekha Hazaaro Dafaa",
   "artist": "Arijit Singh",
   "movie": "Rustom",
@@ -2304,7 +2304,7 @@
 },
 
 {
-  "id": 49,
+  "id": 43,
   "title": "Mirchi Music Awards Medley",
   "artist": "Arijit Singh",
   "movie": "Multi-Movie Medley",
@@ -2399,7 +2399,7 @@
 
 
   {
-    "id": 50,
+    "id": 44,
     "title": "Qasam Kha Li",
     "artist": "Papon",
     "movie": "Bhavesh Joshi Superhero",
@@ -2466,7 +2466,7 @@
   },
 
   {
-  "id": 51,
+  "id": 45,
   "title": "Maine Dil Se Kaha",
   "artist": "K.K.",
   "movie": "Rog",
@@ -2521,7 +2521,7 @@
 },
 
 {
-  "id": 53,
+  "id": 46,
   "title": "Safarnama",
   "artist": "Lucky Ali",
   "movie": "Tamasha",
@@ -2558,7 +2558,7 @@
 },
 
 {
-  "id": 54,
+  "id": 47,
   "title": "Chehra Hai Ya Chand Khila Hai",
   "artist": "Kishore Kumar",
   "movie": "Saagar",
@@ -2589,7 +2589,7 @@
 },
 
 {
-  "id": 55,
+  "id": 48,
   "title": "Banjaara",
   "artist": "Mohammed Irfan",
   "movie": "Ek Villain",
@@ -2650,7 +2650,7 @@
 },
 
 {
-  "id": 56,
+  "id": 49,
   "title": "Zaroorat",
   "artist": "Mustafa Zahid",
   "movie": "Ek Villain",
@@ -2729,7 +2729,7 @@
 },
 
 {
-  "id": 57,
+  "id": 50,
   "title": "Tu Har Lamha",
   "artist": "Arijit Singh",
   "movie": "Khamoshiyan",
@@ -2802,7 +2802,7 @@
 },
 
 {
-  "id": 58,
+  "id": 51,
   "title": "Baarish",
   "artist": "Ash King",
   "movie": "Half Girlfriend",
@@ -2881,7 +2881,7 @@
 },
 
 {
-  "id": 59,
+  "id": 52,
   "title": "Toota Jo Kabhi Tara",
   "artist": "Atif Aslam, Sumedha Karmahe",
   "movie": "A Flying Jatt",
@@ -2954,7 +2954,7 @@
 },
 
 {
-  "id": 60,
+  "id": 53,
   "title": "Tu Hai Ki Nahi",
   "artist": "Ankit Tiwari",
   "movie": "Roy",
@@ -3021,7 +3021,7 @@
 },
 
 {
-  "id": 61,
+  "id": 54,
   "title": "Tu Jo Hai",
   "artist": "Ankit Tiwari",
   "movie": "Mr. X",
@@ -3100,7 +3100,7 @@
 },
 
 {
-  "id": 62,
+  "id": 55,
   "title": "Tujhe Sochta Hoon",
   "artist": "K.K.",
   "movie": "Jannat 2",
@@ -3148,7 +3148,7 @@
   ]
 },
 {
-  "id": 63,
+  "id": 56,
   "title": "Raaz Aankhein Teri",
   "artist": "Arijit Singh",
   "movie": "Raaz Reboot",
@@ -3221,7 +3221,7 @@
 },
 
 {
-  "id": 64,
+  "id": 57,
   "title": "Hai Dil Ye Mera",
   "artist": "Arijit Singh",
   "movie": "Hate Story 2",
@@ -3275,81 +3275,9 @@
   ]
 },
 
-{
-  "id": 65,
-  "title": "Aadat",
-  "artist": "Jal",
-  "movie": "Kalyug",
-  "year": 2005,
-  "scale": "Am",
-  "capo": 4,
-  "strumming": "D-UDUD-UDU",
-  "content": [
-    {
-      "section": "Verse 1"
-    },
-    {
-      "block": "(Am) Na jane kabse\nUmeedein kuch (F) baaki hai\nMujhe Phir Bhi Teri (Am) Yaad\nKyun (F) Aati Hai\nNa Jane Kab (Am) Se"
-    },
-    {
-      "section": "Interlude"
-    },
-    {
-      "block": "(Am) (G) (F)\n(Am) (G) (F)"
-    },
-    {
-      "section": "Chorus"
-    },
-    {
-      "block": "Duur (Am) Jitna Bhi Tum mujh (G) Se\nPaas (F) Tere Main (G)\nAb To (Am) Aadat Si Hai Mujh (G) Ko\nAise Jee (F) Ne Me (G)\nZinda (Am) Gi Se Koi (G) Shikwa\nBhi Na (F) Hi Hai (G)\nAb To (Am) Zinda Hu Main Is\n(G) Neele Aas (F) maan Mein (G)"
-    },
-    {
-      "section": "Interlude"
-    },
-    {
-      "block": "(Am) (G) (F)\n(Am) (G) (F)"
-    },
-    {
-      "section": "Verse 2"
-    },
-    {
-      "block": "Chahat (Am) Aisi Hai Ye Te (G) Ri\nBadhti (F) Jaye (G)\nAahat (Am) Aisi Hai Ye (G) Teri\nMujhko Sa (F) Taye (G)\nYaade (Am) Gehri Hai It (G) Ni\nDil Doob (F) Jaye (G)\nAur (Am) Aankho Me Ye (G) Gam\nNum (F) Ban (G) Jaye"
-    },
-    {
-      "section": "Interlude"
-    },
-    {
-      "block": "(Am) (G) (F) (G)\n(Am) (G) (F) (G)\n\nHey Hey Heyayayay Ooooooo Ooooo"
-    },
-    {
-      "section": "Chorus"
-    },
-    {
-      "block": "Ab To (Am) Aadat Si Hai Mujh (G) Ko\nAise Jee (F) Ne Me (G)"
-    },
-    {
-      "section": "Interlude"
-    },
-    {
-      "block": "(Am) (G) (F) (G)\n(Am) (G) (F) (G)\n\nHey Hey Hey Ye Ye Ye Oooooo Oooooo\nAaaaaaaa Aaaaa Oooooo Ooo"
-    },
-    {
-      "section": "Bridge"
-    },
-    {
-      "block": "Sabhi Raate (Am) Hai\nSabhi Baate (G) Hai (F)\nBhula Do (Am) Unhe\nMitado (G) Unhe (F)"
-    },
-    {
-      "section": "Outro"
-    },
-    {
-      "block": "(Am) (G) (F) (G)\n(Am) (G) (F) (G)\nAaaa Aaaa Aaaa\nAaaaa Ooooooooo\n\nAb To (Am) Aadat Si Hai Mujh (G) Ko (F)"
-    }
-  ]
-},
 
 {
-  "id": 66,
+  "id": 58,
   "title": "Kabhi Jo Baadal Barse",
   "artist": "Arijit Singh",
   "movie": "Jackpot",
@@ -3428,7 +3356,7 @@
 },
 
 {
-  "id": 67,
+  "id": 59,
   "title": "Likhe Jo Khat Tujhe",
   "artist": "Mohammed Rafi",
   "movie": "Kanyadaan",
@@ -3483,7 +3411,7 @@
 },
 
 {
-  "id": 68,
+  "id": 60,
   "title": "Hasi Ban Gaye",
   "artist": "Ami Mishra",
   "movie": "Hamari Adhuri Kahani",
@@ -3550,7 +3478,7 @@
 },
 
 {
-  "id": 69,
+  "id": 61,
   "title": "Jeene Laga Hoon",
   "artist": "Atif Aslam, Shreya Ghoshal",
   "movie": "Ramaiya Vastavaiya",
@@ -3635,7 +3563,7 @@
 },
 
 {
-  "id": 70,
+  "id": 62,
   "title": "Tu Hi Haqeeqat",
   "artist": "Javed Ali",
   "movie": "Tum Mile",
@@ -3702,7 +3630,7 @@
 },
 
 {
-  "id": 71,
+  "id": 63,
   "title": "Tera Mera Rishta Purana",
   "artist": "Mustafa Zahid",
   "movie": "Awarapan",
@@ -3769,7 +3697,7 @@
 },
 
 {
-  "id": 72,
+  "id": 64,
   "title": "Sanam Re",
   "artist": "Arijit Singh, Mithoon",
   "movie": "Sanam Re",
@@ -3848,7 +3776,7 @@
 },
 
 {
-  "id": 73,
+  "id": 65,
   "title": "Dard Dilo Ke",
   "artist": "Mohammed Irfan",
   "movie": "The Xpose",
@@ -3921,7 +3849,7 @@
 },
 
 {
-  "id": 74,
+  "id": 66,
   "title": "Teri Deewani",
   "artist": "Kailash Kher",
   "movie": "Kailasa",
@@ -3976,7 +3904,7 @@
 },
 
 {
-  "id": 75,
+  "id": 67,
   "title": "Aaj Se Teri",
   "artist": "Arijit Singh",
   "movie": "Padman",
@@ -4061,7 +3989,7 @@
 },
 
 {
-  "id": 76,
+  "id": 68,
   "title": "Bairan Banjaare",
   "artist": "Gulzaar Chhaniwala",
   "movie": "Single",
@@ -4110,7 +4038,7 @@
 },
 
 {
-  "id": 77,
+  "id": 69,
   "title": "Ghar Kab Aaoge",
   "artist": "Anu Malik, Arijit Singh",
   "movie": "Border 2",
@@ -4195,7 +4123,7 @@
 },
 
 {
-  "id": 78,
+  "id": 70,
   "title": "Jee Loon Main Tujhko",
   "artist": "Arijit Singh",
   "movie": "Gyaarah Gyaarah",
@@ -4250,7 +4178,7 @@
 },
 
 {
-  "id": 79,
+  "id": 71,
   "title": "Lag Ja Gale",
   "artist": "Lata Mangeshkar",
   "movie": "Woh Kaun Thi?",
@@ -4294,6 +4222,122 @@
     },
     {
       "block": "(G) Lag ja gale ki (Em) phir ye\nHasin (G) raat (Em) ho na (D) ho\n(C) Shaayad phir is(D) janam mein\nMulaa(G)qaat (Am) ho na (G) ho\n(G) Lag jaa gale, phir..."
+    }
+  ]
+},
+
+{
+  "id": 72,
+  "title": "Arz Kiya Hai",
+  "artist": "Anuv Jain, Lost Stories",
+  "movie": "Coke Studio Bharat",
+  "year": 2025,
+  "scale": "Em",
+  "capo": 1,
+  "strumming": "D-UDUD-UDUD-DU",
+  "content": [
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "Kaayar jo (Em7)the, woh shaayar ba(D)ne\nAb kya-kya kare(Cadd9)in yeh ishq mein..(D)\nNa kehte the (Em7)kuch jo, lage khoj me(D)in\nKya lafz chu(Cadd9)ne, naye aashiq yeh..(D)"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Ishq mein (Em7)tere hain Faiz ba(D)ne\nArz ki(C)ya hai\nHumne bhi li(D)kha kuch tere baare mein hai\n\n(Em7)Aise tu lage ki gu(D)laab hai\nAur (Em7)aise tu lage ki gu(D)laab hai\nBaaghon (Em7)mein dil ke khilke inn fi(D)zaaon mein chhaye (C)ho, haaye..(D)\n\nAur (Em7)waise hum toh tere hi ghu(D)laam hain\nAur (Em7)waise hum toh tere hi ghu(D)laam hain\nBaad(Em7)shah dil ke, teri baazi (D)mein jo tu chaa(C)he toh..(D)"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "Doobе (Em)dilo ki kya naav ba(D)noon?\nMain khud tair (C)paaoon na aankhon mein..(D)\nShaayar ki (Em)fitrat mein hi doob(D)na\nMain kya hi la(C)doon toofanon se..(D)"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Ishq mein (Em)tere hain Faiz ba(D)ne\nArz ki(C)ya hai\nHumne bhi li(D)kha kuch tere baare mein hai\n\nHaa(Em)thon ko sambhale mere (D)haathon mein\nKaise (Em)haathon ko sambhale mere (D)haathon mein\nJab tak (Em)neend na aaye, inn (D)lakeeron mein baatein(C) ho, haaye..(D)"
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(Em)-(D)-(C)-(D)"
+    },
+    {
+      "section": "Bridge"
+    },
+    {
+      "block": "(Em)Haan, sab ne toh sab keh (D)diya hai\nKya hi ka(C)hoon jo abhi bhi an(D)kaha hai\n(Em)Main, haaye, naa Mirza, (D)naa Mir, naa maahir, (C)naa zaahir\nKaroon kuch na(D)ya main\nHaaye, (Em)par jo bhi likha (D)hai, jiya hai\nHaan, ji(C)ya hai\n(D)Aise, aise, aise, kaise, waise, jaise"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Em7)Jaise main padhoon mere (D)dil mein jo\nMeri (Em7)aankhein bhi padhe teri (D)aankhon ko\nKya yeh (Em7)mehfil mein baithein? Ya (D)uthein\nDaud jaane(C) ko, haaye..(D)"
+    },
+    {
+      "section": "Outro"
+    },
+    {
+      "block": "Teri (Em)aankhon mein taareefon ki ta(D)laash hai\nMeri (Em)mehfil tere jaane se (D)veeraan hai\nMain bas (Em)shaayar bana hoon\nSirf (D)tu sun’ne aaye (C)toh…(D)\nShayad (Em)shaayar bana hoon\nSirf (D)tu sun’ne aaye (C)toh…(D)"
+    }
+  ]
+},
+
+{
+  "id": 73,
+  "title": "Ashq Na Ho",
+  "artist": "Arijit Singh",
+  "movie": "Holiday",
+  "year": 2014,
+  "scale": "Am",
+  "capo": 0,
+  "strumming": "D-DUD-DUD",
+  "content": [
+    {
+      "section": "Intro"
+    },
+    {
+      "block": "(Am)"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am) O yun na (D) lamha lamha (Am) meri yaa(D)d mein\nHoke tanha (Am) tanha mere baad mein\nNaina ashq na (D) ho\nMaana kal se (Am) honge hum door\nNaina (D) ashq na ho\nNaina (Am) ashq na ho(D)...\n\n(Am) Main na lauta aane waale saal jo\nMeri wa(D)rdi bole mera (Am) haal toh\n(Am) Naina ashq na ho\nYeh samajhn(D)a, main hoon majboor\n(Am) Naina ashq na ho\n(D) Naina ashq na ho (Am).."
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(Am) Beete huey lamhon ke taare gin(D)unga (Am) main\n(Am) Aake tujhe khwaabon mein tere mi(D)lunga (Am) main\n\n(Am) Jab kabhi halki halki barkha aaye\nJab (D) kabhi dil bhi yu(Am)nhi bhar sa ja(D)aye\n(D) Jab kabhi halki ha(Am)lki barkha aaye\nUss pal jhonka (D)ik banke aaunga main\n(Am) Us pal zulfe palke daaman ch(D)hu jaaunga ma(Am)in\n\n(Am) O teri choodi nagmein gaaye jo mere\n(D) Teri palkon pe (Am) ho saaye jo mere\n(Am) Naina ashq na ho\n(D) Aansu karte humein (Am) kamzor\n(Am) Naina ashq na ho\n(Am) Naina ashq na ho.."
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(Am)-(D)-(Am)-(D)-(Am)"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(Am) Tere liye saansein aaye\nTeri liye (D) jaaye, jaaye re.. (Am) jaaye re...\n(Am) Tere liye saansein aaye\nTeri liye jaaye, jaaye re.. (D) jaaye (Am) re...\n\n(Am) Rab(D)ba...\n(D) Rabba bairi se (Am) bichode jaane kisne banaye\nHaaye re, ha(D)aye re, haaye (Am) re.. doori (D) tadpaaye\n\nMere baad (Am) chaahe aaye yaa(D)d meri\n(Am) Naina ashq na ho\n(Am) Naina ashq na ho\nNaina ashq n(D)a ho...\nAshq na (Am) ho ho ho (D) ho.."
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am) O Likhi khat mein maine tujhe b(D)aat jo\nSona rakh ke (Am) takiye tale ra(D)at ko\nNaina (Am) ashq na ho\nYe ju(D)daai bhi hai dastoor\nNaina ashq na (Am) ho\n(Am) Naina ashq na ho..\n\n(Am) Main na lauta aan(D)e waale saal jo\nMeri wardi bo(Am)le mera haal to\nNaina ashq na (D) ho\nYe samjhna, (Am) main hoon majboor\n(Am) Naina ashq na ho\n(Am) Naina ashq na ho.."
+    },
+    {
+      "section": "Outro"
+    },
+    {
+      "block": "(Am)-(D)-(Am)"
     }
   ]
 }

@@ -1,114 +1,972 @@
+/* =========================================================
+   SONG VIEWER
+========================================================= */
+
 .song-wrapper {
   display: flex;
   justify-content: center;
-  padding: 60px 20px;
+
+  padding: 35px 20px 70px;
 }
+
 
 .song-card {
-  width: 800px;
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: min(850px, 100%);
+
+  background: #ffffff;
+
+  padding: 38px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(15, 23, 42, 0.08);
 }
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.song-header {
+  margin-bottom: 25px;
+}
+
 
 .song-title {
-  font-size: 32px;
-  margin-bottom: 8px;
+  margin: 0 0 8px;
+
+  color: #0f172a;
+
+  font-size: clamp(25px, 4vw, 36px);
+
+  line-height: 1.2;
 }
+
 
 .song-artist {
+  margin: 0;
+
   color: #64748b;
-  margin-bottom: 20px;
+
+  font-size: 14px;
 }
 
-.song-meta {
+
+/* =========================================================
+   SONG INFO
+========================================================= */
+
+.song-info-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+
+.info-item {
   display: flex;
-  gap: 30px;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding: 14px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 12px;
+}
+
+
+.info-label {
+  color: #94a3b8;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+}
+
+
+.info-item strong {
+  color: #334155;
+
+  font-size: 14px;
+}
+
+
+.current-key {
+  border-color: rgba(250, 204, 21, 0.5);
+
+  background: #fffbeb;
+}
+
+
+.current-key strong {
+  color: #b45309;
+}
+
+
+/* =========================================================
+   STRUMMING
+========================================================= */
+
+.strumming-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
   margin-bottom: 20px;
-  font-weight: 500;
+
+  padding: 13px 15px;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+}
+
+
+.strumming-icon {
+  font-size: 20px;
+}
+
+
+.strumming-box > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.strumming-label {
+  color: #94a3b8;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+
+.strumming-box strong {
+  color: #334155;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   TRANSPOSE
+========================================================= */
+
+.transpose-box {
+  margin-bottom: 30px;
+
+  padding: 16px;
+
+  border-radius: 14px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+}
+
+
+.transpose-heading {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 13px;
+}
+
+
+.transpose-heading > div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.transpose-heading strong {
+  color: #334155;
+
+  font-size: 13px;
+}
+
+
+.transpose-heading span {
+  color: #94a3b8;
+
+  font-size: 10px;
+}
+
+
+.reset-transpose {
+  border: none;
+
+  background: transparent;
+
+  color: #b45309;
+
+  cursor: pointer;
+
+  font-size: 11px;
+
+  font-weight: 700;
 }
 
 
 .transpose-controls {
   display: flex;
+
+  justify-content: center;
+
   align-items: center;
-  gap: 15px;
-  margin-bottom: 25px;
+
+  gap: 18px;
 }
 
-.transpose-controls button {
-  padding: 6px 12px;
+
+.transpose-btn {
+  width: 38px;
+
+  height: 38px;
+
   border: none;
+
+  border-radius: 10px;
+
   background: #facc15;
-  border-radius: 6px;
+
+  color: #1e293b;
+
   cursor: pointer;
-  font-weight: bold;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  line-height: 1;
+
+  transition: 0.2s ease;
 }
 
-.section-title {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  color: #f59e0b;
+
+.transpose-btn:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 14px rgba(250, 204, 21, 0.3);
+}
+
+
+.transpose-value {
+  min-width: 80px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 2px;
+}
+
+
+.transpose-value strong {
+  color: #334155;
+
   font-size: 18px;
 }
 
-.lyrics-section {
-  font-family: monospace;
-  font-size: 15px;
-  line-height: 1.7;
+
+.transpose-value span {
+  color: #94a3b8;
+
+  font-size: 9px;
 }
+
+
+/* =========================================================
+   LYRICS
+========================================================= */
+
+.lyrics-section {
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+.section-title {
+  margin: 32px 0 13px;
+
+  padding-bottom: 7px;
+
+  border-bottom: 1px solid #e2e8f0;
+
+  color: #d97706;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 17px;
+}
+
 
 .lyrics-line {
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+
+  min-height: 27px;
+
   white-space: pre-wrap;
+
+  word-break: break-word;
 }
 
-.chord {
-  color: #f59e0b;
-  font-weight: bold;
-}
+
+/* =========================================================
+   CHORD
+========================================================= */
 
 .chord {
-  color: #f59e0b;
-  font-weight: bold;
+  display: inline-block;
+
+  margin: 0 2px;
+
+  padding: 1px 6px;
+
+  border-radius: 5px;
+
   background: rgba(245, 158, 11, 0.12);
-  padding: 2px 6px;
-  border-radius: 6px;
+
+  color: #d97706;
+
+  font-weight: 700;
 }
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+.dark .song-card {
+  background: #1e293b;
+
+  border-color: #334155;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+.dark .song-title {
+  color: #f8fafc;
+}
+
+
+.dark .song-artist {
+  color: #94a3b8;
+}
+
+
+.dark .info-item,
+.dark .strumming-box,
+.dark .transpose-box {
+  background: #172235;
+
+  border-color: #334155;
+}
+
+
+.dark .info-item strong,
+.dark .strumming-box strong,
+.dark .transpose-heading strong,
+.dark .transpose-value strong {
+  color: #e5e7eb;
+}
+
+
+.dark .current-key {
+  background: rgba(250, 204, 21, 0.08);
+
+  border-color: rgba(250, 204, 21, 0.3);
+}
+
+
+.dark .current-key strong {
+  color: #facc15;
+}
+
+
+.dark .section-title {
+  color: #facc15;
+
+  border-color: #334155;
+}
+
 
 .dark .chord {
+  background: rgba(250, 204, 21, 0.13);
+
   color: #facc15;
-  background: rgba(250, 204, 21, 0.15);
 }
+
+
+.dark .reset-transpose {
+  color: #facc15;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 700px) {
 
   .song-wrapper {
-    padding: 10px;
+    padding: 15px 10px 50px;
   }
+
 
   .song-card {
-    padding: 15px;
+    padding: 20px 15px;
+
+    border-radius: 15px;
   }
+
 
   .song-title {
-    font-size: 22px;
     text-align: center;
+
+    font-size: 24px;
   }
 
-  .song-meta {
-    flex-direction: column;
-    gap: 5px;
+
+  .song-artist {
     text-align: center;
+
+    font-size: 12px;
+
+    line-height: 1.6;
   }
 
-  .transpose-controls {
-    justify-content: center;
+
+  .song-info-grid {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
   }
 
-  .lyrics-line {
+
+  .info-item {
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+
+  .strumming-box {
+    align-items: flex-start;
+  }
+
+
+  .lyrics-section {
+    font-size: 15px;
+
+    line-height: 1.75;
+  }
+
+
+  .section-title {
+    margin-top: 27px;
+
     font-size: 16px;
   }
 
 }
+
+/* =========================================================
+   CLICKABLE CHORD
+========================================================= */
+
+.chord-clickable {
+  position: relative;
+  cursor: pointer;
+}
+
+.chord-active {
+  background: rgba(245, 158, 11, 0.25);
+}
+
+.chord-diagram-popup {
+  position: absolute;
+  z-index: 1000;
+
+  left: 50%;
+  top: calc(100% + 10px);
+
+  transform: translateX(-50%);
+
+  width: 150px;
+  padding: 10px;
+
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.chord-diagram-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.dark .chord-diagram-popup {
+  background: #1e293b;
+  border-color: #475569;
+}
+
+
+
+@media (max-width: 700px) {
+
+  .chord-clickable {
+    position: relative;
+  }
+
+  .chord-diagram-popup {
+    position: absolute;
+
+    z-index: 1000;
+
+    left: 50%;
+    top: calc(100% + 8px);
+
+    transform: translateX(-50%);
+
+    width: 135px;
+    max-width: calc(100vw - 30px);
+
+    padding: 8px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+
+    box-shadow:
+      0 8px 25px rgba(0, 0, 0, 0.18);
+  }
+
+  .chord-diagram-image {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    height: auto;
+  }
+
+  .dark .chord-diagram-popup {
+    background: #1e293b;
+    border-color: #475569;
+  }
+
+}
+
+/* Song information */
+
+.song-info-grid {
+  grid-template-columns: 1fr;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.info-item {
+  padding: 10px 12px;
+}
+
+/* Strumming */
+
+.strumming-box {
+  margin-bottom: 15px;
+  padding: 11px 12px;
+}
+
+/* Transpose */
+
+.transpose-box {
+  margin-bottom: 22px;
+  padding: 13px;
+}
+
+.transpose-controls {
+  gap: 14px;
+}
+
+.transpose-btn {
+  width: 42px;
+  height: 42px;
+}
+
+.transpose-value {
+  min-width: 75px;
+}
+
+/* Lyrics */
+
+.lyrics-section {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.lyrics-line {
+  margin-bottom: 9px;
+}
+
+/* Chord */
+
+.chord {
+  margin: 0 1px;
+  padding: 2px 5px;
+}
+
+/* =========================================================
+   READING MODE
+========================================================= */
+
+.reading-mode-control {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.reading-mode-btn {
+  border: 1px solid #e2e8f0;
+
+  background: #f8fafc;
+  color: #475569;
+
+  padding: 8px 15px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.reading-mode-btn:hover {
+  transform: translateY(-1px);
+}
+
+.reading-mode-btn.active {
+  background: #fffbeb;
+  border-color: rgba(245, 158, 11, 0.5);
+  color: #b45309;
+}
+
+/* Reading mode */
+
+.lyrics-section.reading-mode {
+  font-size: 17px;
+  line-height: 2;
+}
+
+.lyrics-section.reading-mode .lyrics-line {
+  margin-bottom: 14px;
+}
+
+.lyrics-section.reading-mode .section-title {
+  margin-top: 35px;
+}
+
+/* Dark mode */
+
+.dark .reading-mode-btn {
+  background: #172235;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+.dark .reading-mode-btn.active {
+  background: rgba(250, 204, 21, 0.1);
+  border-color: rgba(250, 204, 21, 0.3);
+  color: #facc15;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .reading-mode-control {
+    margin-bottom: 18px;
+  }
+
+  .reading-mode-btn {
+    padding: 9px 14px;
+    font-size: 11px;
+  }
+
+  .lyrics-section.reading-mode {
+    font-size: 17px;
+    line-height: 2;
+  }
+
+  .lyrics-section.reading-mode .lyrics-line {
+    margin-bottom: 15px;
+  }
+
+}
+
+/* =========================================================
+   SONG ACTIONS
+========================================================= */
+
+.song-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.song-action-btn {
+  border: 1px solid #e2e8f0;
+
+  background: #f8fafc;
+  color: #475569;
+
+  padding: 8px 16px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.song-action-btn:hover {
+  transform: translateY(-1px);
+}
+
+.dark .song-action-btn {
+  background: #172235;
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+@media (max-width: 700px) {
+
+  .song-action-btn {
+    padding: 9px 15px;
+    font-size: 11px;
+  }
+
+}
+
+/* =========================================================
+   AUTO SCROLL
+========================================================= */
+
+.auto-scroll-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 22px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  background: #f8fafc;
+}
+
+.auto-scroll-main {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auto-scroll-start {
+  border: none;
+
+  padding: 8px 13px;
+
+  border-radius: 9px;
+
+  background: #facc15;
+  color: #1e293b;
+
+  cursor: pointer;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.auto-scroll-start.active {
+  background: #f59e0b;
+}
+
+.auto-scroll-label {
+  margin-left: 4px;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.scroll-speed-btn {
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #334155;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.scroll-speed-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.scroll-speed-value {
+  min-width: 42px;
+
+  text-align: center;
+
+  color: #334155;
+
+  font-size: 13px;
+}
+
+.scroll-reset-btn {
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+
+  background: transparent;
+  color: #64748b;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+/* DARK MODE */
+
+.dark .auto-scroll-box {
+  background: #172235;
+  border-color: #334155;
+}
+
+.dark .scroll-speed-btn {
+  background: #1e293b;
+  border-color: #475569;
+  color: #e5e7eb;
+}
+
+.dark .scroll-speed-value {
+  color: #e5e7eb;
+}
+
+.dark .scroll-reset-btn {
+  border-color: #475569;
+  color: #cbd5e1;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .auto-scroll-box {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 9px 8px;
+  }
+
+  .auto-scroll-main {
+    gap: 6px;
+  }
+
+  .auto-scroll-start {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .auto-scroll-label {
+    display: none;
+  }
+
+  .scroll-speed-btn {
+    width: 29px;
+    height: 29px;
+  }
+
+  .scroll-speed-value {
+    min-width: 40px;
+    font-size: 12px;
+  }
+
+}
+
+
+
+
