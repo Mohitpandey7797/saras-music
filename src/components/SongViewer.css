@@ -555,8 +555,8 @@
 }
 
 .dark .chord-diagram-popup {
-  background: #1e293b;
-  border-color: #475569;
+  background: #ffffff;
+  border-color: #e2e8f0;
 }
 
 
@@ -807,68 +807,83 @@
 }
 
 /* =========================================================
-   AUTO SCROLL
+   PROFESSIONAL AUTO SCROLL
 ========================================================= */
 
 .auto-scroll-box {
+  width: fit-content;
+  max-width: 100%;
+
+  margin: 0 auto 22px;
+
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
 
-  gap: 8px;
+  padding: 7px 9px;
 
-  margin-bottom: 22px;
-
-  padding: 10px 12px;
+  background: #ffffff;
 
   border: 1px solid #e2e8f0;
   border-radius: 12px;
 
-  background: #f8fafc;
+  box-shadow:
+    0 4px 15px rgba(15, 23, 42, 0.06);
 }
 
-.auto-scroll-main {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+
+/* START BUTTON */
 
 .auto-scroll-start {
   border: none;
 
   padding: 8px 13px;
 
-  border-radius: 9px;
+  border-radius: 8px;
 
-  background: #facc15;
-  color: #1e293b;
+  background: #f8fafc;
+  color: #334155;
 
   cursor: pointer;
 
   font-size: 12px;
   font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.auto-scroll-start:hover {
+  background: #f1f5f9;
 }
 
 .auto-scroll-start.active {
-  background: #f59e0b;
+  background: #facc15;
+  color: #1e293b;
 }
 
-.auto-scroll-label {
-  margin-left: 4px;
 
-  color: #94a3b8;
+/* SPEED */
 
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
+.scroll-speed-controls {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  padding-left: 5px;
 }
+
 
 .scroll-speed-btn {
   width: 30px;
   height: 30px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  border-radius: 7px;
 
   background: #ffffff;
   color: #334155;
@@ -876,30 +891,65 @@
   cursor: pointer;
 
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
+
+  transition: all 0.15s ease;
+}
+
+.scroll-speed-btn:hover:not(:disabled) {
+  background: #f8fafc;
+  transform: translateY(-1px);
 }
 
 .scroll-speed-btn:disabled {
-  opacity: 0.35;
+  opacity: 0.3;
   cursor: not-allowed;
 }
 
-.scroll-speed-value {
-  min-width: 42px;
 
-  text-align: center;
+/* SPEED DISPLAY */
 
+.scroll-speed-display {
+  min-width: 55px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1px;
+}
+
+.scroll-speed-display span {
+  color: #94a3b8;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.4px;
+}
+
+.scroll-speed-display strong {
   color: #334155;
 
   font-size: 13px;
 }
 
+
+/* RESET */
+
 .scroll-reset-btn {
   width: 30px;
   height: 30px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: 1px solid #e2e8f0;
-  border-radius: 8px;
+  border-radius: 7px;
 
   background: transparent;
   color: #64748b;
@@ -907,31 +957,73 @@
   cursor: pointer;
 
   font-size: 16px;
+
+  transition: all 0.15s ease;
 }
 
-/* DARK MODE */
+.scroll-reset-btn:hover {
+  background: #f8fafc;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
 
 .dark .auto-scroll-box {
   background: #172235;
+
   border-color: #334155;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.15);
 }
+
+
+.dark .auto-scroll-start {
+  background: #1e293b;
+  color: #e2e8f0;
+}
+
+.dark .auto-scroll-start:hover {
+  background: #263449;
+}
+
+.dark .auto-scroll-start.active {
+  background: #facc15;
+  color: #1e293b;
+}
+
 
 .dark .scroll-speed-btn {
   background: #1e293b;
   border-color: #475569;
-  color: #e5e7eb;
+  color: #e2e8f0;
 }
 
-.dark .scroll-speed-value {
-  color: #e5e7eb;
+.dark .scroll-speed-btn:hover:not(:disabled) {
+  background: #263449;
 }
+
+
+.dark .scroll-speed-display strong {
+  color: #e2e8f0;
+}
+
 
 .dark .scroll-reset-btn {
   border-color: #475569;
   color: #cbd5e1;
 }
 
-/* MOBILE */
+.dark .scroll-reset-btn:hover {
+  background: #263449;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media (max-width: 700px) {
 
@@ -939,34 +1031,50 @@
     width: 100%;
     box-sizing: border-box;
 
-    padding: 9px 8px;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 7px;
   }
 
-  .auto-scroll-main {
-    gap: 6px;
-  }
 
   .auto-scroll-start {
     padding: 8px 10px;
+
     font-size: 11px;
   }
 
-  .auto-scroll-label {
-    display: none;
+
+  .scroll-speed-controls {
+    gap: 4px;
   }
+
 
   .scroll-speed-btn {
     width: 29px;
     height: 29px;
   }
 
-  .scroll-speed-value {
-    min-width: 40px;
+
+  .scroll-speed-display {
+    min-width: 48px;
+  }
+
+
+  .scroll-speed-display span {
+    font-size: 7px;
+  }
+
+
+  .scroll-speed-display strong {
     font-size: 12px;
   }
 
+
+  .scroll-reset-btn {
+    width: 29px;
+    height: 29px;
+  }
+
 }
-
-
-
-

@@ -98,7 +98,7 @@ function renderLine(
           {isActive && (
             <span className="chord-diagram-popup">
               <img
-                src={`${process.env.PUBLIC_URL}/chord-diagrams/${transposed}.png`}
+                src={`${process.env.PUBLIC_URL}/chord-diagrams/${encodeURIComponent(transposed)}.png`}
                 alt={`${transposed} guitar chord`}
                 className="chord-diagram-image"
               />
@@ -122,18 +122,26 @@ function SongViewer({ song }) {
   const [activeChord, setActiveChord] = useState(null);
 
   const [autoScroll, setAutoScroll] = useState(false);
-  const [scrollSpeed, setScrollSpeed] = useState(1);
+  const [scrollSpeed, setScrollSpeed] = useState(1.0);
 
   const scrollAnimationRef = useRef(null);
 
 
+  // =========================================================
+  // AUTO SCROLL
+  // =========================================================
+
+
+
   const changeScrollSpeed = (change) => {
     setScrollSpeed((current) => {
-      const newSpeed = current + change;
+      const next = Number(
+        (current + change).toFixed(1)
+      );
 
       return Math.min(
-        2,
-        Math.max(0.5, Number(newSpeed.toFixed(2)))
+        1.5,
+        Math.max(0.1, next)
       );
     });
   };
@@ -142,58 +150,74 @@ function SongViewer({ song }) {
   useEffect(() => {
     if (!autoScroll) {
       if (scrollAnimationRef.current) {
-        cancelAnimationFrame(
-          scrollAnimationRef.current
-        );
+        cancelAnimationFrame(scrollAnimationRef.current);
+        scrollAnimationRef.current = null;
       }
-
       return;
     }
 
     let lastTime = performance.now();
+    let scrollAccumulator = 0;
 
-    const scroll = (currentTime) => {
-      const delta = currentTime - lastTime;
-      lastTime = currentTime;
+    const NORMAL_SPEED = 32;
 
-      /*
-        Base speed:
-        1.0x ≈ normal slow song-reading speed
-      */
-
-      const pixelsPerSecond = 18 * scrollSpeed;
-
-      window.scrollBy(
-        0,
-        (pixelsPerSecond * delta) / 1000
+    const animate = (currentTime) => {
+      const deltaTime = Math.min(
+        currentTime - lastTime,
+        50
       );
 
-      const reachedBottom =
-        window.innerHeight +
-        window.scrollY >=
+      lastTime = currentTime;
+
+      const pixelsToMove =
+        NORMAL_SPEED *
+        scrollSpeed *
+        (deltaTime / 1000);
+
+      scrollAccumulator += pixelsToMove;
+
+      // Only move when enough distance has accumulated
+      if (scrollAccumulator >= 0.1) {
+        window.scrollBy(
+          0,
+          scrollAccumulator
+        );
+
+        scrollAccumulator = 0;
+      }
+
+      const atBottom =
+        window.scrollY +
+        window.innerHeight >=
         document.documentElement.scrollHeight - 2;
 
-      if (reachedBottom) {
+      if (atBottom) {
         setAutoScroll(false);
+        scrollAnimationRef.current = null;
         return;
       }
 
       scrollAnimationRef.current =
-        requestAnimationFrame(scroll);
+        requestAnimationFrame(animate);
     };
 
     scrollAnimationRef.current =
-      requestAnimationFrame(scroll);
+      requestAnimationFrame(animate);
 
     return () => {
       if (scrollAnimationRef.current) {
         cancelAnimationFrame(
           scrollAnimationRef.current
         );
+
+        scrollAnimationRef.current = null;
       }
     };
   }, [autoScroll, scrollSpeed]);
 
+  // =========================================================
+  // RESET AUTO SCROLL
+  // =========================================================
 
   const resetAutoScroll = () => {
     setAutoScroll(false);
@@ -202,6 +226,8 @@ function SongViewer({ song }) {
       cancelAnimationFrame(
         scrollAnimationRef.current
       );
+
+      scrollAnimationRef.current = null;
     }
 
     window.scrollTo({
@@ -209,6 +235,7 @@ function SongViewer({ song }) {
       behavior: "smooth",
     });
   };
+
 
   const copySong = async () => {
     if (!song) return;
@@ -735,49 +762,68 @@ function SongViewer({ song }) {
 
         <div className="auto-scroll-box">
 
-          <div className="auto-scroll-main">
+          {/* START / PAUSE */}
+
+          <button
+            type="button"
+            className={`auto-scroll-start ${autoScroll ? "active" : ""
+              }`}
+            onClick={() =>
+              setAutoScroll((current) => !current)
+            }
+          >
+            {autoScroll
+              ? "⏸ Pause"
+              : "▶ Auto Scroll"}
+          </button>
+
+
+          {/* SPEED */}
+
+          <div className="scroll-speed-controls">
 
             <button
-              className={`auto-scroll-start ${autoScroll ? "active" : ""
-                }`}
-              onClick={() =>
-                setAutoScroll((current) => !current)
-              }
-            >
-              {autoScroll
-                ? "⏸ Pause"
-                : "▶ Auto Scroll"}
-            </button>
-
-            <span className="auto-scroll-label">
-              Speed
-            </span>
-
-            <button
+              type="button"
               className="scroll-speed-btn"
-              onClick={() => changeScrollSpeed(-0.25)}
-              disabled={scrollSpeed <= 0.5}
+              onClick={() => changeScrollSpeed(-0.1)}
+              disabled={scrollSpeed <= 0.1}
+              aria-label="Decrease scroll speed"
             >
               −
             </button>
 
-            <strong className="scroll-speed-value">
-              {scrollSpeed.toFixed(2)}×
-            </strong>
+
+            <div className="scroll-speed-display">
+
+              <span>Speed</span>
+
+              <strong>
+                {scrollSpeed.toFixed(1)}×
+              </strong>
+
+            </div>
+
 
             <button
+              type="button"
               className="scroll-speed-btn"
-              onClick={() => changeScrollSpeed(0.25)}
-              disabled={scrollSpeed >= 2}
+              onClick={() => changeScrollSpeed(0.1)}
+              disabled={scrollSpeed >= 1.5}
+              aria-label="Increase scroll speed"
             >
               +
             </button>
 
           </div>
 
+
+          {/* RESET */}
+
           <button
+            type="button"
             className="scroll-reset-btn"
             onClick={resetAutoScroll}
+            aria-label="Reset auto scroll"
           >
             ↻
           </button>
