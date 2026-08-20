@@ -98,7 +98,7 @@ function renderLine(
           {isActive && (
             <span className="chord-diagram-popup">
               <img
-                src={`${process.env.PUBLIC_URL}/chord-diagrams/${encodeURIComponent(transposed)}.png`}
+                src={`${process.env.PUBLIC_URL}/chord-diagrams/${transposed.replace("#", "s")}.png`}
                 alt={`${transposed} guitar chord`}
                 className="chord-diagram-image"
               />
