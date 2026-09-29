@@ -166,7 +166,7 @@
   },
   {
     "id": 3,
-    "title": "Mann Mera",
+    "title": "Mann Mera Aur Tera",
     "artist": "Gajendra Verma",
     "movie": "Table No. 21",
     "year": 2012,
@@ -2473,7 +2473,7 @@
   "year": 2005,
   "scale": "C",
   "capo": 0,
-  "strumming": "D UUD UUD DU",
+  "strumming": "D DU UDU",
   "content": [
     {
       "section": "Intro"
@@ -4721,8 +4721,761 @@
       "block": "(Em)Jisko jo bhi (Bm)milta hai \n(C)besabab na(B7)hi milta \n(Em)Mujhse bole (Bm)mann mera\n(C)sabko sab na(G)hi milta"
     }
   ]
-}
+},
 
+{
+  "id": 83,
+  "title": "Apna Mujhe Tu Laga",
+  "artist": "Sonu Nigam",
+  "movie": "1920: Evil Returns",
+  "year": 2012,
+  "scale": "Am",
+  "capo": 0,
+  "strumming": "D UDUD UDU D DU",
+  "content": [
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(Am)Anjaane ho tum jo, begane ho tum jo\n(C)Pehchaane lagte ho(G)kyun\n(Dm)Tum ghehri neendon mein jab soye soye ho\n(Em)To mujh mein jagte ho(Am)kyun"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(Am)Jab tujhko pata hai dil muskurata hai\n(C)Kya tujh se hai(G)waasta\n(Dm)Kya tujhmein dhoondhoon main\n(Dm)Kya tujhse chaahoon main\n(Em)Kya kya hai tujhmein(Am)mera"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am)Janu na mai tujhme mera hissa hai(Em)kya\nPar(F)ajnabi Apna mujhe tu(Am)laga\n(Am)Janu na mai tujhme mera hissa hai(Em)kya\nPar(F)ajnabi Apna mujhe tu(Am)laga"
+    },
+    {
+      "section": "Verse 3"
+    },
+    {
+      "block": "(G)Tujhse taalluk jo(Am)nahi kuch mera\n(G)Kyun tu lage hai(Am)apana saa\n(G)Dekhu jo tujhko ik(Am)nazar jaaye bhar\n(G)Mujhme hai mera(Am)jo khala\n\n(C)Zindagi me khushi(G)tere aane se hai\n(Dm)Warna jine me gham(Em)har bahane se(Am)hai\n(C)Hai yeh alag baat hai(G)hum mile aaj hain\n(Dm)Dil tujhe jaanata ik(Em)zamane se(Am)hai"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am)Janu na mai tujhme mera hissa hai(Em)kya\nPar(F)ajnabi Apna mujhe tu(Am)laga\n(Am)Janu na main tujhme mera hissa hai(Em)kya\nPar(F)ajnabi Apna mujhe tu(Am)laga"
+    },
+    {
+      "section": "Verse 4"
+    },
+    {
+      "block": "(G)Aankhon ne aankhon se(Am)kahi daastaan\n(G)Tumko banake(Am)raazdaan\n(G)Baahon me jannat aa gayi(Am)khushnumaa\n(G)Tum jo huye ho(Am)mehrbaan\n\n(C)Jism se jism ka yun(G)taaruf huaa\n(Dm)Ho gaye hum sanam rooh(Em)tak(Am)aashna\n(C)Ek zara jo chale do(G)kadam saath me\n(Dm)Mill gaya hai hume(Em)zindagi ka(Am)pata"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am)Janu na mai tujhm mera hissa hai(Em)kya\nPar(F)ajnabi Apna mujhe tu(Am)laga\n(Am)Janu na mai tujhm mera hissa hai(Em)kya\nPar(F)ajnabi Apna mujhe tu(Am)laga"
+    }
+  ]
+},
+
+{
+  "id": 84,
+  "title": "Main Agar Kahoon",
+  "artist": "Sonu Nigam, Shreya Ghoshal",
+  "movie": "Om Shanti Om",
+  "year": 2007,
+  "scale": "Em",
+  "capo": 0,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Intro"
+    },
+    {
+      "block": "(Em)....(C)...(Em)....(Em)"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Em)Tumko paya hai to jaise\n(B)khoya(Em)hun\n(Em)Kehna chaahun bhi to tumse\n(D)kya kahun\n\n(Em)Tumko paya hai to jaise\n(B)khoya(Em)hun\n(Em)Kehna chaahun bhi to tumse\n(D)kya kahun\n\n(D)Kisi zabaan mein(Em)bhi\n(D)woh lafz hi(Em)nahin\nKe(Am)jinmein tum ho(D)kya\ntumhein(B)bata sakoon\n\n(Am)Main agar(D)kahun(B)tumsa(Em)hasin\n(Am)Qaynaat(D)mein(B)nahi hai(Em)kahin\n(Am)Tareef yeh bhi(D)to sach hai\n(B)kuchh bhi(Em)nahin\n\n(Em)Tumko paya hai to jaise(B)khoya(Em)hun"
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(Em)Shokhiyon mein doobi yeh(A)adaayein\n(D)Chehre se jhalki huyi hain\n(Em)Zulf ki ghani-ghani(A)ghataayein\n(D)Shaan se dhalki huyi hain\n\n(D)Lehrata(Em)aanchal\n(D)hai jaise(Em)baadal\n(B)Baahon mein bhari hai jaise chandni\nRoop(C)ki chan(Em)dani"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am)Main agar(D)kahun(B)ye dil(Em)kashi\n(Am)Hai nahi(D)kahi (B)na hogi(Em)kabhi\n(Am)Tareef yeh bhi(D)to sach hai\n(B)kuchh bhi(Em)nahin\n\n(Em)Tumko paya hai to jaise(B)khoya(Em)hun"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(D)Tum huye mehar(G)baan\n(D)To hai yeh das(G)taan\nAa..(D)Tum huye mehar(G)baan\n(D)To hai yeh das(G)taan\n\nAb(Am)tumhara(G)mera ek(D)hai kar(Em)waan\nTum(B)jahaan main(Em)wahaan"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am)Main agar(D)kahun(B)humsafar(Em)meri\n(Am)Apsara ho(D)tum ya(B)koi(Em)pari\n(Am)Tareef yeh bhi(D)to sach hai\n(B)kuchh bhi(Em)nahin\n\n(Em)Tumko paya hai to jaise(B)khoya(Em)hun\n(Em)Tumko paya hai to jaise(B)khoya(Em)hun\n(Em)Kehna chahun bhi to tumse(D)kya kahun\n(Em)Tumko paya hai to jaise(B)khoya(Em)hun\n(Em)Kehna chahun bhi to tumse(D)kya kahun\n\n(D)Kisi zabaan mein(Em)bhi\n(D)woh lafz hi(Em)nahin\nKe(Am)jinmein tum ho(D)kya\ntumhein(B)bata sakoon\n\n(Am)Main agar(D)kahun(B)tumsa(Em)hasin\n(Am)Qaynaat(D)mein(B)nahi hai(Em)kahin\n(Am)Tareef yeh bhi(D)to sach hai\n(B)kuchh bhi(Em)nahin\n\n(Em)Tumko paya hai to jaise(B)khoya(Em)hun"
+    }
+  ]
+},
+
+{
+  "id": 85,
+  "title": "Kabhi Alvida Na Kehna Title Track",
+  "artist": "Sonu Nigam, Alka Yagnik, Shankar-Ehsaan-Loy",
+  "movie": "Kabhi Alvida Na Kehna",
+  "year": 2006,
+  "scale": "F",
+  "capo": 0,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(F)Tum ko bhi(Dm)hai khabar\n(Gm)Mujhko bhi(F)hai pata\n(F)Ho raha(Dm)hai judaa\n(Gm)Dono ka(F)raasta\n\n(Dm)Dur(C)jaake(Gm)bhi mujhse\n(Dm)tum(C)meri(Gm)yaado me(F)rehna\n\n(F)Kabhi alvida na(C)kehna\n(F)Kabhi alvida na(C)kehna\nKabhi(Gm)alvida na(F)kehna"
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(F)Jitni thi khushiya(Dm)Sab kho chuki hai\n(A#)Bas ek gham hai ki(F)jaata nahi\n(F)Samjha ke dekha(Dm)behla ke dekha\n(A#)Dil hai ki chain isko(F)aata nahi\n(F)aata nahi\n\n(Dm)Aasoon(C)hai ki(Gm)hai angarai\n(Dm)Aag(C)hai kab(Gm)aankhon se(F)behna"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(F)Kabhi alvida na(C)kehna\n(F)Kabhi alvida na(C)kehna\nKabhi(Gm)alvida na(F)kehna"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(F)Rut aa rahi hai(Dm)Rut jaa rahi hai\n(A#)Dard ka mausam(F)badla nahi\n(F)Rang yeh halka(Dm)itna hai gehra\n(A#)Sadiyon main hoga(F)halka nahi\n(F)Halka nahi\n\n(Dm)Kaun(C)jaane(Gm)kya hona hai\n(Dm)Hum ko(C)hai(Gm)ab kya kya(F)sehna"
+    }
+  ]
+},
+
+{
+  "id": 86,
+  "title": "Aisa Lagta Hai",
+  "artist": "Sonu Nigam, Alka Yagnik, Anu Malik",
+  "movie": "Refugee",
+  "year": 2000,
+  "scale": "D",
+  "capo": 1,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(D)Ho Aisa lag(Dsus4)ta hai,\n(D)jo na (G)hua, (D)hone ko (Bm)hai.\n(D)Aisa lag(Dsus4)ta hai,\n(D)ab dil me(G)ra, (D)khone ko (Bm)hai.\n(F#m)Warna dil kyon dha(G)dakta\n(G)Saansein kyon (D)rukti\n(A7)Neendein mere kyon ud (D)jaati\n\n(D)Ho Aisa lag(Dsus4)ta hai,\n(D)jo na (G)hua, (D)hone ko (Bm)hai.\n(D)Aisa lag(Dsus4)ta hai,\n(D)ab dil me(G)ra, (D)khone ko (Bm)hai.\n(F#m)Warna dil kyon dha(G)dakta\n(G)Saansein kyon (D)rukti\n(A7)Neendein mere kyon ud (D)jaati\n\n(D)Ho Aisa lag(Dsus4)ta hai,\n(D)jo na (G)hua, (D)hone ko (Bm)hai."
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(D) (Bm)\n(D) (G) (A) (D)\n(F#m) (G) (A) (D)"
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(Bm)Koi chehra ni(D)gahon pe,\n(Bm)chhane la(Dsus4)ga.\n(Bm)Koi ab roz (D)khabon mein,\n(Bm)aane la(Dsus4)ga.\n(D)Aayi rut jo (G)nayi,\njaage (D)armaan (G)kai.\n(Bm)Mausam koi (D)ghazal jaise,\n(Bm)gaane (Dsus4)laga."
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(D)Oh Aisa lag(Dsus4)ta hai,\n(D)jaise na(G)sha, (D)hone ko (Bm)hai.\n(D)Aisa lag(Dsus4)ta hai,\n(D)hosh me(G)ra, (D)khone ko (Bm)hai.\n(F#m)Warna dil kyon dha(G)dakta\n(G)Saansein kyon (D)rukti\n(A7)Neendein mere kyon ud (D)jaati\n\n(D)Ho aisa (Dsus4)lagta h(D)ai\njo (G)na hu(D)a hone k(Bm)o hai"
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(D)(G)(A)(D)\n(F#m)(G)(A)(D)"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(Bm)Mehki, mehki fi(D)za ne\nli (Bm)angraiy(Dsus4)an.\n(Bm)Neeli, neeli hai (D)baadal ki,\n(Bm)parchhaaiya(Dsus4)an.\n(D)Thandi, thandi (G)hawa laayi,\n(D)raag na(G)ya.\n(Bm)Gunji, gunji si (D)hai jaise,\n(Bm)shehenaiya(Dsus4)an."
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(D)Ho Aisa lag(Dsus4)ta hai,\n(D)koi me(G)ra, (D)hone ko (Bm)hai.\n(D)Aisa lag(Dsus4)ta hai,\n(D)har faas(G)la, (D)khone ko (Bm)hai.\n(F#m)Warna dil kyon dha(G)dakta\n(G)Saansein kyon (D)rukti\n(A7)Neendein mere kyon ud (D)jaati\n\n(D)Ho Aisa lag(Dsus4)ta hai,\n(D)jo na (G)hua, (D)hone ko (Bm)hai.\n(D)Aisa lag(Dsus4)ta hai,\n(D)ab dil me(G)ra, (D)khone ko (Bm)hai.\n(F#m)Warna dil kyon dha(G)dakta\n(G)Saansein kyon (D)rukti\n(A7)Neendein mere kyon ud (D)jaati"
+    }
+  ]
+},
+
+{
+  "id": 87,
+  "title": "Aahista",
+  "artist": "Arijit Singh, Jonita Gandhi",
+  "movie": "Laila Majnu",
+  "year": 2018,
+  "scale": "G",
+  "capo": 0,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G)Tum milo roz(F)hi\n(G)Magar hai yeh baat(F)bhi\nMere(Dm)hona(C)aahista(G)aahista\nMere(Dm)hona(C)aahista(G)aahista\n\n(G)Tum Mere Ho(F)Rahe\nYa Ho(G)Gaye\nYa Hai(F)Faslaa\nPuche(Dm)Dil To(G)Kahu Mai Kya(F)Bhala\nDil(Dm)Sawlon Se(G)Hi\nNa De(F)Rula\n\nHota(F)Kya(C)Hai\n(C)Aahista(G)Aahista..\nMere(F)Ho(C)Na\n(C)Aahista..(G)Aahista.."
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(G)Doori(Bm)ye kam hi na(C)ho\nMain(Cm)neendon mein bhi chal(G)raha\n(G)Hota(Bm)hai kal bew(C)afa\nYe(F)aata(Dm)nahin, chhal(G)raha?\n\nLakh(Dm)waade(G)jahan ke jhuthe(F)hai\nLog(Dm)aadhe(G)jahan ke jhuthe(F)hai\n\nMere(Dm)hona(C)ahista(G)ahista?\nMere(Dm)hona(C)ahista(G)ahista?"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "Maine(F)Baat Ye Tumse Kehni(G)Hai\nTera(F)Pyaar Khushi Ki Tehni(G)Hai\nMain(F)Sham(C)Sehar Ab Hasta(G)Hoon\nMaine(F)Yaad(C)Tumhari Pehni(G)Hai"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Mere(F)Ho(C)Na\n(C)Aahista..(G)Aahista..\nHona(F)Kya(C)Hai\n(C)Aahista..(G)Aahista.."
+    }
+  ]
+},
+
+{
+  "id": 88,
+  "title": "O Priya Re Priya",
+  "artist": "Arijit Singh, June Banerjee",
+  "movie": "Majnu",
+  "year": 2013,
+  "scale": "Am",
+  "capo": 0,
+  "strumming": "D-UD-DU",
+  "content": [
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(Am)Kichhu shopno enechhi (F)kuriye\n(G)Rekhe de noyto de uriye (x2)\n\n(Dm)Ho.. amader premer (C)porowana jari\n(Am)Hoye geche onek (E)age..."
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am)O priya re priya (G)ay na ektu kache\n(F)O priya re priya ekta (G)golpo bolar (Am)ache (x2)"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(Am)Elo (G)alap er din\n(C)Keno aj (Dm)thakis dure (Am)\n(Am)Elo (G)hawa ki rongin\n(C)Beche o to (Dm)thakche more (Em)\n\n(Dm)Ho amader moner\n(C)Dewa newa kobe (G)\n(Am)Hoye geche onek (E)age..."
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Am)O priya re priya (G)ay na ektu kache\n(F)O priya re priya ekta (G)golpo bolar (Am)ache (x2)"
+    },
+    {
+      "section": "Interlude / English Dialogue"
+    },
+    {
+      "block": "Hey I can't live without you\nAnd this is so much true\nCan't live without you"
+    },
+    {
+      "section": "Verse 3"
+    },
+    {
+      "block": "A(Am)se udas e (G)somoy\nTo(C)ke mone po(Dm)re ro(Em)j\nVa(Am)se na p(G)awar bhoy\nMon(C)er obo(Dm)sthata boj(Em)h\n\n(Dm) Ho amader premer (C)porowana jari\n(G) Hoye geche onek ag(E)e..."
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "O (Am)priya re priya (G)ay na ektu kache\nO (F)priya re priya ekta (G)golpo bolar (Am)ache (x2)"
+    }
+  ]
+},
+
+{
+  "id": 89,
+  "title": "Aye Khuda",
+  "artist": "Salim Merchant, Salim-Sulaiman",
+  "movie": "Pathaal Lok",
+  "year": 2020,
+  "scale": "G",
+  "capo": 2,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G)Aye Khuda, (Bm)Mujhko Bata\nTu Re(Am)Hta Kaha Kya Te(D)Ra Pata\n(G)Hum To Yahan Pe (Bm)Musafir Hai\nJo (Am)Dhundhe Apni Man(D)Zil Ka Pata\n\n(G)Aye Khuda, (Bm)Mujhko Bata\nTu Re(Am)Hta Kaha Kya Te(D)Ra Pata\n(G)Hum To Yahan Pe (Bm)Musafir Hai\nJo (Am)Dhundhe Apni Man(D)Zil Ka Pata"
+    },
+    {
+      "section": "Vocal Scat / Interlude"
+    },
+    {
+      "block": "(G)Haaa (Bm)Haaa (Am)Haaaa (D)Haaa\n(G)Haaa (Bm)Haaa (Am)Haaaa (D)Haaa"
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(G)Yaara Teri Yaad (Em)Aati Hai\n(G)Jaan Meri Jaan (C)Jaati Hai\n(G)Tanhayome (Em)Rehta Hu\n(G)Khudse Hi Aksar Yeh (C)Kehta Hu\n\nKyu Tune (G)Dil Toda\nKyu Tune (Em)Yu Choda\nKyu Tera (G)Ab Bhi Rahe\nDil Ko (C)Inte(D)Zaar\nKyu Chali (G)Aati Hai\nKyu Tad(Em)Pati Hai\nKyu Hu (G)Ab Bhi Me Yu (C)Beka(D)Raar"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G)Aye Khuda, (Bm)Mujhko Bata\nTu Re(Am)Hta Kaha Kya Te(D)Ra Pata\n(G)Hum To Yahan Pe (Bm)Musafir Hai\nJo (Am)Dhundhe Apni Man(D)Zil Ka Pata"
+    },
+    {
+      "section": "Vocal Scat / Interlude"
+    },
+    {
+      "block": "(G)Haaa (Bm)Haaa (Am)Haaaa (D)Haaa\n(G)Haaa (Bm)Haaa (Am)Haaaa (D)Haaa"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(G)Fasle (Bm)Hai Magar\n(Em)Phir Bhi Tu (G)Door (D)Nahi\n(G)Mana Ki (Bm)Hum To Hai\n(Em)Par Tu Maj(G)Boor (D)Nahi\n\n(G)Har Lamha Mujhko Yeh (Em)Tadpati Hai\n(G)Jaan Meri Jaan (C)Jati Hai\n(G)Tanhayome (Em)Rehta Hu\n(G)Khudse Hi Aksar Yeh (C)Kehta Hu\n\nKyu Tune (G)Dil Toda\nKyu Tune (Em)Yu Choda\nKyu Tera (G)Ab Bhi Rahe Dil Ko (C)Inte(D)Zaar\nKyu Chali (G)Aati Hai\nKyu Tad(Em)Pati Hai\nKyu Hu (G)Ab Bhi Me Yu (C)Beka(D)Raar"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G)Aye Khuda, (Bm)Mujhko Bata\nTu Re(Am)Hta Kaha Kya Te(D)Ra Pata\n(G)Hum To Yahan Pe (Bm)Musafir Hai\nJo (Am)Dhundhe Apni Man(D)Zil Ka Pata"
+    },
+    {
+      "section": "Verse 3"
+    },
+    {
+      "block": "(G)Yaara Teri Yaad (Em)Aati Hai\n(G)Jaan Meri Jaan (C)Jaati Hai\n(G)Tanhayome (Em)Rehta Hu\n(G)Khudse Hi Aksar Yeh (C)Kehta Hu\n\nKyu Tune (G)Dil Toda\nKyu Tune (Em)Yu Choda\nKyu Tera (G)Ab Bhi Rahe Dil Ko\n(C)Inte(D)Zaar\nKyu Chali (G)Aati Hai\nKyu Tad(Em)Pati Hai\nKyu Hu (G)Ab Bhi Me Yu (C)Beka(D)Raar"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G)Aye Khuda, (Bm)Mujhko Bata\nTu Re(Am)Hta Kaha Kya Te(D)Ra Pata\n(G)Hum To Yahan Pe (Bm)Musafir Hai\nJo (Am)Dhundhe Apni Man(D)Zil Ka Pata"
+    },
+    {
+      "section": "Outro"
+    },
+    {
+      "block": "(G)Haaa (Bm)Haaa (Am)Haaaa (D)Haaa\n(G)Haaa (Bm)Haaa (Am)Haaaa (D)Haaa"
+    }
+  ]
+},
+
+{
+  "id": 91,
+  "title": "Zamana Lage",
+  "artist": "Arijit Singh, Pritam",
+  "movie": "Metro... In Dino",
+  "year": 2025,
+  "scale": "A",
+  "capo": 0,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(A) Tumhare shehar ka (F#m) mausam\n\n(D) Bada suhana (Bm) lage\n\n(A) Main ek shaam (F#m) chura loon agar\n\n(D) Bura na (E) lage"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(A) Tumhare bas mein agar (F#m) ho to\n\n(D) Bhool jao (Bm) humein\n\n(A) Tumhe bhulane mein shayad (F#m)\n\n(D) Mujhe zamaana (E) lage\n\n(A) Zamaana (F#m) lage, zamaana (D) lage\n\n(Bm) Tumhe bhulane mein\n\n(D) Mujhe zamaana (E) lage"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(A) Maana meri hi (F#m) khata hai\n\n(D) Iss dafa kal humpe jo (Bm) fida tha\n\n(A) Ab khafa yun hi na (F#m) berukhi rakh\n\n(D) Yun hi na (E) dukhi\n\n(A) Kuchh seene mein (F#m) uth raha hai baarha\n\n(D) Tu iss tarah se (Bm)\n\n(A) Mere saath bewafai (F#m) kar\n\n(D) Tu iss tarah se (E)\n\n(A) Mere saath bewafai (F#m) kar\n\n(D) Ki tere baad mujhe koi (Bm) bewafa lage"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(A) Zamaana (F#m) lage, zamaana (D) lage\n\n(Bm) Tumhe bhulane mein\n\n(D) Mujhe zamaana (E) lage\n\n(A) Zamaana (F#m) lage, zamaana (D) lage\n\n(Bm) Tumhe bhulane mein\n\n(D) Mujhe zamaana (E) lage"
+    }
+  ]
+},
+
+{
+  "id": 92,
+  "title": "Agar Tum Saath Ho",
+  "artist": "Arijit Singh, Alka Yagnik, A.R. Rahman",
+  "movie": "Tamasha",
+  "year": 2015,
+  "scale": "D",
+  "capo": 1,
+  "strumming": "D DU UDU",
+  "content": [
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(D)Pal bhar (G)thahar jaao\n(D)Dil ye (G)sambhal jaaye\n(D)Kaise tumhe roka (G)karun (A)\n(D)Meri (G)taraf aata (D)har gham (G)phisal jaaye\n(D)Aankhon mein tum ko (G)bharun (A)\n(D)Bin bole baatein (G)tumse karun(A)\n(G)Agar tum saath (A)ho.. (D)\n(G)Agar tum saath (A)ho (D)"
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(G) (A) (G) (D)"
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(D)Behti (G)rehti.. (A)\n(D)Nahar na(G)diya si teri (A)duniya mein\n(D)Meri dun(G)iya hai teri (A)chaahaton mein\n(D)Main dhal (G)jaata hoon teri (A)aadaton mein\n(G)'gar tum saath (A)ho (D)"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "Teri nazron mein hai (A)tere sapne\n(G)Tere sapno mein (D)hai naraazi\n(G)Mujhe lagta hai ke (A)baatein dil ki\n(G)Hoti lafzon ki (A)dhokebaazi"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(D)Tum saath ho ya na ho (G)kya fark ha(A)i\n(D)Bedard thi zindagi (G)bedard hai(A)\n(G)Agar tum saath (A)ho (D)\n(G)Agar tum saath (A)ho (D)"
+    }
+  ]
+},
+
+{
+  "id": 93,
+  "title": "Tu Jaane Na",
+  "artist": "Atif Aslam, Pritam",
+  "movie": "Ajab Prem Ki Ghazab Kahani",
+  "year": 2009,
+  "scale": "G",
+  "capo": 2,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(G) Kaise Bataye (Bm) Kyu Tujhko Chahe\n(Am) Yaara Bata Naa (D) Paye\n(G) Baate Dilo Ki (Bm) Dekho Zuban Ki\n(Am) Aankhe Tujhe Sam(D)jhaye"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Tu Jaane (G) Na Aa (D) Aa\nTu Jaane (G) Na\nTu Jaane (G) Na Aa (D) Aa\nTu Jaane (G) Na"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "Mil Ke Bhi (G) Hum Na Mi(D)le\nTum (Em) Se Na Jaane (D) Kyu\nMilo Ke (G) Hai Faas(C)le\nTum (Am) Se Na Jaane (D) Kyu\n\nAnjaane (G) Hai Silsi(D)le\nTum (Em) Se Na Jaane (D) Kyu\nSapne Hai (G) Palko Ta(C)le\nTum (Am) Se Na Jane (D) Kyu"
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(G) Kaise Bataye (Bm) Kyu Tujhko Chahe\n(Am) Yaara Bata Na (D) Paye\n(G) Baate Dilo Ki (Bm) Dekho Zuban Ki\n(Am) Aankhe Tujhe Sam(D)jhaye"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Tu Jaane (G) Na Aa (D) Aa\nTu Jaane (G) Na\nTu Jaane (G) Na Aa (D) Aa\nTu Jaane (G) Na"
+    },
+    {
+      "section": "Verse 3"
+    },
+    {
+      "block": "(G) Nigahon Mein Dekho Meri (C) Jo Hai Bas Gaya\n(G) Wo Hai Milta Tumse Huba(D)hoo Ooo\n(G) Jaane Teri Aankhe Thi Ya (C) Baate Thi Wajah\n(G) Hue Tum Jo Dil Ki Aar(D)zoo\n\nTum Paas (G) Hoke Bhi\nTum Aas (C) Hoke Bhi\nEhsaas (G) Hoke Bhi\nApne Na(C)hi Aise Ho (G)\n\nHum Ko Gi(G)le\nTum (Em) Se Na Jaane (D) Kyu\nMilo Ke (G) Hai Faas(C)le\nTum (Am) Se Na Jaane Kyu (D) Uuu"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Tu Jaane (G) Na Aa (D) Aa\nTu Jaane (G) Na\nTu Jaane (G) Na Aa (D) Aa\nTu Jaane (G) Na"
+    },
+    {
+      "section": "Verse 4"
+    },
+    {
+      "block": "(G) Khayalon Mein Laakhon Baate (C) Yun To Keh Gaya\n(G) Bola Kuch Na Tere Saam(D)ne Ooo\n(G) Hue Na Begaane Bhi Tum (C) Hoke Aur Ke\n(G) Dekho Tum Na Mere Hi (D) Bane\n(G) Afsos Hota Hai (C) Dil Bhi Ye Rota Hai\n(G) Sapne Sanjota Hai (C) Badla Hua Soche Ye (D)\n\nHum The Mi(G)le\nTum (Em) Se Na Jaane (D) Kyu\nMilon Ke (G) Hai Faas(C)le\nTum (Am) Se Na Jaane (D) Kyu\n\nAnjaane, Hai Silsi(G)le\nTum (Em) Se Na Jaane (D) Kyu\nSapne Hai, Palkon Ta(G)le\nTum (Am) Se Na Jaane Kyu (D) Uuu"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G) Kaise Bataye (Bm) Kyu Tujhko Chahe\n(Am) Yaara Bata Na (D) Paye\n(G) Baate Dilo Ki (Bm) Dekho Zuban Ki\n(Am) Aankhe Tujhe Sam(D)jhaye\n\nTu Jaane (G) Na Aa (D) Aa\nTu Jaane (G) Na\nTu Jaane (G) Na Aa (D) Aa\nTu Jaane (G) Na"
+    }
+  ]
+},
+
+{
+  "id": 94,
+  "title": "Humsafar",
+  "artist": "Akhil Sachdeva, Mansheel Gujral",
+  "movie": "Badrinath Ki Dulhania",
+  "year": 2017,
+  "scale": "G",
+  "capo": 0,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Intro"
+    },
+    {
+      "block": "Sun (G) zaalima mere\nSanu koi (C) darr na\nKi (G) samjhega zamaa(C)na\nOh (G) tu vi si kamli\nMain (C) vi sa kamla\nIshqe (G) da rog sayaana\nIshqe (C) da rog sayaana"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G) Sun mere humsa(C)far\nKya tujhe (G) itni si bhi kha(C)bar\n\n(G) Sun mere humsa(C)far\nKya tujhe (G) itni si bhi kha(C)bar\nKi teri (G) saanse chalti ji(C)dhar\nRahunga (D) bas wahin umra (G) bhar\nRahunga (Bm) bas wahin umra (G) bhar, haaye"
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(Em) Jitni haseen ye mulakaa(Bm)tein hai\n(C) Unse bhi pyaari teri baa(G)tein hai\n(Em) Baaton mein teri jo kho (Bm) jaate hai\n\nAaun na (Am) hosh mein main (G) kabhi\nBaahon mein hai (Am) teri zinda(G)gi haaye"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G) Sun mere humsa(C)far\nKya tujhe (G) itni si bhi kha(C)bar"
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(G) (C)\n\nZaalima tere ishq'ch main\nHo gayiaan kamli haye"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(G) Main toh yoon khada kis\n(G) Soch mein pada tha\n(C) Kaise jee raha tha main (D) deewana\n\n(G) Chupke se aake tune\n(G) Dil mein samaa ke tune\n(Bm) Chhed diya (C) kaisa ye (D) fasana\n\nOh (Em) muskurana bhi tujhi se (Bm) seekha hai\n(C) Dil lagaane ka tu hi ta(G)reeka hai\n(Em) Aitbaar bhi tujhi se (Bm) hota hai\nAaun na (Am) hosh mein main (G) kabhi\nBaahon mein hai (Am) teri zinda(G)gi haaye"
+    },
+    {
+      "section": "Bridge"
+    },
+    {
+      "block": "(G) Hai nahi tha (C) pata\nKe tujhe (G) maan loonga (C) khuda\nKi teri (G) galiyon mein is (C) kadar\n(D) Aaunga har (G) peher"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(G) Sun mere humsa(C)far\nKya tujhe (G) itni si bhi kha(C)bar\nKi teri (G) saanse chalti ji(C)dhar\nRahunga (D) bas wahin umra (G) bhar\nRahunga (Bm) bas wahin umra (G) bhar, haaye"
+    }
+  ]
+},
+
+{
+  "id": 95,
+  "title": "Roke Na Ruke Naina",
+  "artist": "Arijit Singh, Amaal Mallik",
+  "movie": "Badrinath Ki Dulhania",
+  "year": 2017,
+  "scale": "G",
+  "capo": 2,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(G) Tu jo nazron ke saamne (Em) kal hoga nahi\nTujhko (C) dekhe bin main\n(C) Mar na jaaun kahin\n\n(G) Tu jo nazron ke saamne (Em) kal hoga nahi\nTujhko (C) dekhe bin main\n(C) Mar na jaaun kahin\n\nTujhko (Em) bhool jaaun kaise\nMaane na, (Bm) manaaun kaise\nTu (D) bata"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Roke na ruke (G) naina\nTeri (C) ore hai (D) inhe toh (C) rehna (D)\n(C) Roke na (D) ruke (C) naina"
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(G) (C) (G) (C)"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(G) Kaat ta hoon laakhon lamhein\n(C) Kat te nahi hai\n(G) Saaye teri yaadon ke\n(C) Hat te nahi hai\n\n(G) Kaat ta hoon laakhon lamhein\n(C) Kat te nahi hai\n(G) Saaye teri yaadon ke\n(C) Hat te nahi hai\n\n(Bm) Sookh gaye hai aansu teri (D) judaai ke\n(C) Palkon se phir bhi baadal\n(Am) Chant te nahi hai\n\n(Bm) Khudko main hasaaun kaise\nMaane (Em) na, manaaun kaise\nTu (D) bata"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Roke na ruke (G) naina\nTeri (C) ore hai (D) inhe toh (C) rehna (D)\n(C) Roke na (D) ruke (C) naina"
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "Mmm (G) (C) (G) (C)\nMmm (G) (C) (G) (C)"
+    },
+    {
+      "section": "Verse 3"
+    },
+    {
+      "block": "(G) Haathon ki lakeerein do (C) milti jahaan hai\n(G) Jisko pata hai bata de\n(C) Jagah woh kahaan hai\n\n(G) Haathon ki lakeerein do (C) milti jahaan hai\n(G) Jisko pata hai bata de\n(C) Jagah woh kahaan hai\n\n(Bm) Ishq mein jaane kaisi ye (D) bebasi hai\n(C) Dhadkano se milkar bhi dil (D) tanha hai\nDoori (Bm) main mitaaun kaise\nMaane na (Em) , manaaun kaise\nTu (D) bata"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Roke na ruke (G) naina\nTeri (C) ore hai (D) inhe toh (C) rehna (D)\n(C) Roke na (D) ruke (C) naina"
+    }
+  ]
+},
+
+{
+  "id": 96,
+  "title": "Raina",
+  "artist": "Arijit Singh, Shekhar Ravjiani, Priya Saraiya",
+  "movie": "Single",
+  "year": 2026,
+  "scale": "F#",
+  "capo": 1,
+  "strumming": "D UUD UUD DU",
+  "content": [
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "Rai(F)na\nUs(F)ke jaisi hi t(Am)u baawri ……\nRai(A#)na Rain(F)a\nKi(F)tni khamoshiy(Am)on se bhari\nTh(Dm)odi jaagi si\nKhoyi kh(Gm)oyi si\nSa(Gm)rd si fa(A#)rsh pe so(C)yi si\nGu(F)m ho j(A7)aise cha(C)inaa\nRa(F)ina\nUs(F)ke jaisi hi t(Am)u baawri\nRa(Gm)ina Rain(F)a"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "Na(F)inon mein kajal\nKa(Dm)ara daarke woh\nCh(A#)hoti si bindiya sajaaye\nCh(Dm)upke jaise kah(Am)in baadlon mein\nCh(C)and tera naina (Gm)churaaye\nHa(G)sti resham si (C)khurduri baatein\nHa(G)sti resh(C)am si khurd(A#)uri baatein\nSu(Gm)bah ho jaaye (A#)phir bhi\nNa(C) kehti (F)woh (A7)jo hai(C) kehna\nRa(F)ina"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "Us(F)ke jaisi hi t(Am)u baawri\nRa(A#)ina Raina(F)\nKi(F)tni khamoshiy(Am)on se bhari\nThodi jaa(Dm)gi si\nKhoyi kho(Gm)yi si\nSa(Gm)rd si far(A#)sh pe soy(C)i si\nGu(F)m ho ja(A7)ise chain(C)aa\nRa(F)ina\nUs(F)ke jaisi hi tu (Am)baawri\nRa(Gm)ina Rai(F)na"
+    }
+  ]
+},
+
+{
+  "id": 97,
+  "title": "Mere Samne Waali Khidki Mein",
+  "artist": "Kishore Kumar, R.D. Burman",
+  "movie": "Padosan",
+  "year": 1968,
+  "scale": "G",
+  "capo": 0,
+  "strumming": "D-DU-UDU",
+  "content": [
+    {
+      "section": "Intro"
+    },
+    {
+      "block": "(G)Mere saam(D) newali khidki mein\nEk(Em)chaand ka (C) tukda rehta hai\n(G)Mere saam(D) newali khidki mein\nEk(Em)chaand ka (C) tukda rehta hai\nAf (G)sos yeh hai ke(Am)woh humse\nKuch(C)ukhda(F)ukhda(G) rehta hai\n(G)Mere saam(D) newali khidki mein\nEk(Em)chaand ka (C) tukda rehta hai"
+    },
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(G)Jis roz se(C)dekha hai usko\n(Am)Hum shamma(G) jalana bhool gaye\n(G)Jis roz se(C)dekha hai usko\n(Am)Hum shamma(G) jalana bhool gaye\nDil(G) thaam ke (C)aise baithe hai\nKah(Am)in aana(G) jaana bhool gaye\nAb(D) aath peh(Am)ar in aankhon mein\nWoh(D)chanchal(G) mukhda rehta hai"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "Bars(G)aat bhi aa(C)kar chali gayi\nBaa(Am)dal bhi garaj kar (G)baras gaye\nBars(G)aat bhi aa(C)kar chali gayi\nBaa(Am)dal bhi garaj kar (G)baras gaye\nPar (G)uski ek (C)jhalak ke hum\nEh (Am)husan ke maalik (G)taras gaye\nKab (D)pyaas bujh(Am)egi aankhon ki\nDin(D)raat yeh duk(G)hda rehta hai"
+    },
+    {
+      "section": "Outro"
+    },
+    {
+      "block": "(G)Mere saam(D)ne wali khidki mein\nEk(Em)chaand ka (C)tukda rehta hai\n(G)Mere saam(D)ne wali khidki mein\nEk(Em)chaand ka (C)tukda rehta hai\nAf(G)sos yeh hai ke(Am)woh humse\nKuch (C)ukhda (F)ukhda (G)rehta hai\n(G)Mere saam(D)ne wali khidki mein\nEk (Em)chaand ka (C)tukda rehta hai"
+    }
+  ]
+},
+
+{
+  "id": 98,
+  "title": "O Sanam",
+  "artist": "Lucky Ali",
+  "movie": "Sunoh",
+  "year": 1996,
+  "scale": "G",
+  "capo": 0,
+  "strumming": "D UUD UUD DU",
+  "content": [
+    {
+      "section": "Interlude"
+    },
+    {
+       "block": "(G)Hmm.. (C)Hmm.. (A)Hmm.. (D)Hmm..\n(G)Hmm.. (C)Hmm.. (A)Hmm.. (D)Hmm.."
+    },
+    
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(G)Shaam sa(Am)vere teri\n(C)Yaadein aati (D)hain\n(G)Aa ke (Am)dil ko mere\n(C)Yun (D)tadpaati hain\n\n(C)O (D)sanam (C)mohobbaat ki (D)kasam (G)Hmm"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(G)Milke bi(Am)chadna to\n(C)Dastoor ho (D)gaya\n(G)Yahoon main (Am)teri main jo\n(C)Door ho (D)gaya\n\n(C)O (D)sanam in (C)yaadon ki (D)kasam (G)Hmm"
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(G)Hmm.. (C)Hmm.. (A)Hmm.. (D)Hmm..\n(G)Hmm.. (C)Hmm.. (A)Hmm.. (D)Hmm.."
+    },
+    {
+      "section": "Verse 3"
+    },
+    {
+      "block": "(G)Samjhe zamana ki (D)dil hai khilona\n(C)Jaana hai ab kya hai (D)dil ka lagana\n(Am)Nazron se na ab (D)hum ko churana\n(C)Mar bhi gaya to (D)bhool na jaana (G)Hmm"
+    },
+    {
+      "section": "Verse 4"
+    },
+    {
+      "block": "(G)Aakhon main (Am)basi ho\nPar (C)door ho (D)kahin\n(G)Dil ke (Am)kareeb ho yeah\n(C)Mujh ko hai (D)yakeen\n\n(C)O (D)sanam tere (C)pyaar ki (D)kasam (G)Hm.."
+    },
+    {
+      "section": "Interlude"
+    },
+    {
+      "block": "(G)Hmm.. (C)Hmm.. (A)Hmm.. (D)Hmm..\n(G)Hmm.. (C)Hmm.. (A)Hmm.. (D)Hmm.."
+    }
+  ]
+}
 
 
 
