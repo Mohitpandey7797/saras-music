@@ -5475,6 +5475,55 @@
       "block": "(G)Hmm.. (C)Hmm.. (A)Hmm.. (D)Hmm..\n(G)Hmm.. (C)Hmm.. (A)Hmm.. (D)Hmm.."
     }
   ]
+},
+
+{
+  "id": 99,
+  "title": "Dost Banke",
+  "artist": "Rahat Fateh Ali Khan, Gurnazar",
+  "movie": "Single",
+  "year": 2024,
+  "scale": "Em",
+  "capo": 1,
+  "strumming": "D-UDUD-UDU",
+  "content": [
+    {
+      "section": "Verse 1"
+    },
+    {
+      "block": "(Em) Jis Cheez Se (D) Dard Mile\n(Bm) Kyu Baar Baar Karta Hai (Cmaj7) Wai Sajna\n(Em) Jis Cheez Se (D) Dard Mile\n(Bm) Kyu Baar Baar Karta Hai (Cmaj7) Wai Sajna\n(Em7) Thoda Ta Khayal Kar (D) Sadda Dil Lohe Da Ta (Bm7) Nai Sajna\n(Cmaj7) Sada Dil Lohe Da Ta Nai Sajna"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Em) Behte Hain Na Behte Hain Na (D)\n(Gmaj7) Ansu Mere Behte Hain Na (Am7)\n(Cmaj7) Jab Wo Humse Kehte Hain Na (Bm7)\n(D) Dost Banke Rehte Hain Na (Cmaj7)\n(Em) Behte Hain Na Behte Hain Na (D)\n(Gmaj7) Ansu Mere Behte Hain Na (Am7)\n(Cmaj7) Jab Wo Humse Kehte Hain Na (Bm7)\n(D) Dost Banke Rehte Hain Na (Cmaj7)"
+    },
+    {
+      "section": "Verse 2"
+    },
+    {
+      "block": "(Em) Adhoore Waadon Ko (D) Anjam Nahi Deta\n(Bm) Rishta To Rakhta Hai Par (Bmaj7) Naam Nahi Deta\n(Em) Adhoore Waadon Ko (D) Anjam Nahi Deta\n(Bm) Rishta To Rakhta Hai Par (Bmaj7) Naam Nahi Deta\n(Em) Pinjre Me Band (D) Panchi Ki Tarah Rakhta Hai\n(Bm7) Udne Ko Khulla (Cmaj7) Aasman Nahi Deta\n\n(C) Asi (Em) Tere Bin Koi (D) Takkya Nahi\n(B) Tu Mere Moore (Bm) Takke Chehre (Cmaj7) Kai Sajna\n(Em) Asi Tere Bin Koi (D) Takkya Nahi\n(Bm) Tu Mere Moore Takke Chehre (Cmaj7) Kai Sajna\n(Em7) Thoda Ta Khayal Kar (D) Sadda Dil Lohe Da Ta (Bm7) Nai Sajna\n(Cmaj7) Sada Dil Lohe Da Ta Nai Sajna"
+    },
+    {
+      "section": "Chorus"
+    },
+    {
+      "block": "(Em) Behte Hain Na Behte Hain Na (D)\n(Gmaj7) Ansu Mere Behte Hain Na (Am7)\n(Cmaj7) Jab Wo Humse Kehte Hain Na (Bm7)\n(D) Dost Banke Rehte Hain Na (Cmaj7)"
+    },
+    {
+      "section": "Verse 3"
+    },
+    {
+      "block": "(Gmaj7) Dard Tan Dindai Yaar Mera (D) Araam Nai Dinda\n(Bm) Apne Naam De Piche Wala (D) Naam Nai Dinda\n(Em) Dard Tan Dindai Yaar Mera (D) Araam Nai Dinda\n(Bm) Apne Naam De Piche Wala (D) Naam Nai Dinda\n(Em) Aap Pata Nai Kihnu Kihnu (D) Kithey Kithey Mildai\n(Bm) Asi Je Howe Milna Sanu (Cmaj7) Jaan Nai Dinda\n\nSada Ohde (Em) Kol Kuch (D) Lukeya Nahi\nOhne (B) Sadde Ton Lukoye Raaz (Cmaj7) Kai Sajna\n(Em7) Thoda Ta Khayal Kar (D) Sadda Dil Lohe Da Ta (Bm7) Nai Sajna\n(Cmaj7) Sada Dil Lohe Da Ta Nai Sajna"
+    },
+    {
+      "section": "Outro"
+    },
+    {
+      "block": "(Em) Behte Hain Na Behte Hain Na (D)\n(Gmaj7) Ansu Mere Behte Hain Na (Am7)\n(Cmaj7) Jab Wo Humse Kehte Hain Na (Bm7)\n(D) Dost Banke Rehte Hain Na (Cmaj7)"
+    }
+  ]
 }
 
 
