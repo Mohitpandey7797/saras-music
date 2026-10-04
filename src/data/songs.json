@@ -5829,12 +5829,7 @@
   "capo": 0,
   "strumming": "D-UDUD-UDU",
   "content": [
-    {
-      "section": "Intro"
-    },
-    {
-      "block": "(A) (A)\n(A) (D) (G) (A)\n(A) (D) (G) (A)"
-    },
+    
     {
       "section": "Verse 1"
     },
@@ -5905,7 +5900,7 @@
       "section": "Verse 2"
     },
     {
-      "block": "(G) Jaise dhara or nadiyan\n(G) Jaise phool or bagiya\n(G) Mere itne (D) jyada paas (G) hai tu\n(G) Jab na hoga tera aanchal\n(G) Naina mere honge jal-thal\n(G) Jayenge fir (D) kahan mere (G) aansu\n\n(G) Dukh door hua mera sara\n(G) Andhiyaro me chamka tara\n(D) Naam tera jab bhi (G) pukara"
+      "block": "(G) Jaise dhara or nadiyan\n(G) Jaise phool or bagiya\n(G) Mere itne (D) jyada paas (G) hai tu\n(G) Jab na hoga tera aanchal\n(G) Naina mere honge jal-thal\n(G) Jayenge kahan (D) phir mere (G) aansu\n\n(G) Dukh door hua mera sara\n(G) Andhiyaro me chamka tara\n(D) Naam tera jab bhi (G) pukara"
     },
     {
       "section": "Chorus"
